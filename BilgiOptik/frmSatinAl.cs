@@ -250,6 +250,7 @@ namespace BilgiOptik
                 s.toplamTutar = Convert.ToDecimal(lblTutar.Text);
                 s.tarih = DateTime.Now;
                 u.stokMiktari = u.stokMiktari - 1;
+                s.urunID = u.urunID;
                 FormAcma.gozNumara.Show();
                 Program.id = id;
                 this.Hide();

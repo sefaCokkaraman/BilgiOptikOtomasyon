@@ -87,5 +87,11 @@ namespace BilgiOptik
             pnlKategori.Width = 130;
             this.Hide();
         }
+
+        private void btnNotDefteri_Click(object sender, EventArgs e)
+        {
+            FormAcma.notDefteri.Show();
+            this.Hide();
+        }
     }
 }

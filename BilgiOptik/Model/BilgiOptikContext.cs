@@ -13,6 +13,7 @@ namespace BilgiOptik.Model
         }
 
         public virtual DbSet<Ajanda> Ajanda { get; set; }
+        public virtual DbSet<BilgiOptikFirma> BilgiOptikFirma { get; set; }
         public virtual DbSet<Goz> Goz { get; set; }
         public virtual DbSet<gozDaimi> gozDaimi { get; set; }
         public virtual DbSet<GozDerece> GozDerece { get; set; }

@@ -130,6 +130,12 @@
     <Compile Include="frmMarkaIslemleri.Designer.cs">
       <DependentUpon>frmMarkaIslemleri.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNotDefteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotDefteri.Designer.cs">
+      <DependentUpon>frmNotDefteri.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOdemeler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,7 @@
     <Compile Include="kayitBelirleme.cs" />
     <Compile Include="Model\Ajanda.cs" />
     <Compile Include="Model\BilgiOptikContext.cs" />
+    <Compile Include="Model\BilgiOptikFirma.cs" />
     <Compile Include="Model\Goz.cs" />
     <Compile Include="Model\gozDaimi.cs" />
     <Compile Include="Model\GozDerece.cs" />
@@ -242,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMarkaIslemleri.resx">
       <DependentUpon>frmMarkaIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotDefteri.resx">
+      <DependentUpon>frmNotDefteri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOdemeler.resx">
       <DependentUpon>frmOdemeler.cs</DependentUpon>

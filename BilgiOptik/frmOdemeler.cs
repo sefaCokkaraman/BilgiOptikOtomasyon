@@ -104,6 +104,10 @@ namespace BilgiOptik
 
         private void frmOdemeler_Load(object sender, EventArgs e)
         {
+            if (Program.k.yetkiID==2)
+            {
+                btnOdemeTipleri.Visible = false;
+            }
             Musteri musteri = Program.musteri;
             Urun gelenUrun = Program.urun;
             Satis gelenSatis = Program.GelenSatis;

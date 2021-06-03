@@ -37,6 +37,8 @@ namespace BilgiOptik
         {
             kullanici = txtKadi.Text;
             Kullanici k = db.Kullanici.Where(d => d.kullaniciAdi == kullanici).SingleOrDefault();
+            BilgiOptikFirma bilgiOptikFirma = db.BilgiOptikFirma.FirstOrDefault();
+            
 
             if (k != null)
             {
@@ -49,8 +51,8 @@ namespace BilgiOptik
                     guvenlikSifresi = (rand.Next(999999)).ToString();
                     MailMessage message = new MailMessage();
                     to = (k.eposta).ToString();
-                    mail = "bilgioptikyazilim@gmail.com";
-                    sifre = "bilgioptik6054";
+                    mail =bilgiOptikFirma.email;
+                    sifre = bilgiOptikFirma.sifre;
                     mesaj = "Merhaba, \n \n" + bilgioptik + " hesap şifreni değiştirmek için " + guvenlikSifresi + " aktivasyon kodunu gir." +
                     "\n \nDaha önce de şifre değişikliği için talepte bulunduysan yalnızca en son gelen epostadaki kod geçerlidir." 
                     +  " \n \nBu siz değilseniz: \n \n" + bilgioptik + " Masaüstü hesabınıza başkası giriş yapmış olabilir. Hesabınızın güvenliği için parolanızı sıfırlamayı ve" +

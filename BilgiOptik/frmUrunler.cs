@@ -70,6 +70,27 @@ namespace BilgiOptik
 
         private void frmUrunler_Load(object sender, EventArgs e)
         {
+            if (Program.k.yetkiID==2)
+            {
+                btnUrunEkle.Visible = false;
+                btnKategoriEkle.Visible = false;
+                btnGelir.Visible = false;
+                btnGuncelle.Visible = false;
+                btnKategoriEkle.Visible = false;
+                btnStokEkle.Visible = false;
+                btnMarkaEkle.Visible = false;
+                btnSil.Visible = false;
+
+
+                cmsUrunlerGrid.Enabled = false;
+
+
+                
+
+
+            }
+
+
             UrunGridGoster();
 
             cmbListele.Items.Add("Model Numarası");
@@ -146,10 +167,13 @@ namespace BilgiOptik
             }
 
         }
-
         private void dgwUrunler_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            UrunGuncelle();
+            if (Program.k.yetkiID!=2)
+            {
+                UrunGuncelle();
+
+            } 
 
         }
         #endregion

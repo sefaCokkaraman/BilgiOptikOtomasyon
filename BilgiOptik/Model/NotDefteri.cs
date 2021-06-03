@@ -14,6 +14,9 @@ namespace BilgiOptik.Model
 
         public int kullaniciID { get; set; }
 
+        [StringLength(50)]
+        public string baslik { get; set; }
+
         public DateTime? tarih { get; set; }
 
         public string notu { get; set; }

@@ -34,7 +34,6 @@ namespace BilgiOptik
             this.btnBilgiler = new System.Windows.Forms.Button();
             this.btnUrunler = new System.Windows.Forms.Button();
             this.btnKayit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAyarlar = new System.Windows.Forms.Button();
             this.btnSatinAl = new System.Windows.Forms.Button();
             this.btnOdemeler = new System.Windows.Forms.Button();
@@ -70,7 +69,6 @@ namespace BilgiOptik
             this.cmbListele = new System.Windows.Forms.ComboBox();
             this.rbSatislar = new System.Windows.Forms.RadioButton();
             this.rbTedarikciGider = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlUst.SuspendLayout();
             this.pnlKategori.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwgelir)).BeginInit();
@@ -152,17 +150,6 @@ namespace BilgiOptik
             this.btnKayit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKayit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnKayit.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Image = global::BilgiOptik.Properties.Resources.bilgioptik1;
-            this.pictureBox1.Location = new System.Drawing.Point(466, 245);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(288, 153);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
             // 
             // btnAyarlar
             // 
@@ -571,14 +558,12 @@ namespace BilgiOptik
             this.Controls.Add(this.pnlUst);
             this.Controls.Add(this.txtAra);
             this.Controls.Add(this.pnlKategori);
-            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGelirGider";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "frmGelirGider";
             this.Load += new System.EventHandler(this.frmGelirGider_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlUst.ResumeLayout(false);
             this.pnlUst.PerformLayout();
             this.pnlKategori.ResumeLayout(false);
@@ -604,7 +589,6 @@ namespace BilgiOptik
         private System.Windows.Forms.Button btnBilgiler;
         private System.Windows.Forms.Button btnUrunler;
         private System.Windows.Forms.Button btnKayit;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAyarlar;
         private System.Windows.Forms.Button btnSatinAl;
         private System.Windows.Forms.Button btnOdemeler;

@@ -43,6 +43,7 @@
             this.btnEklentiler = new System.Windows.Forms.Button();
             this.btnProfil = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.btnNotDefteri = new System.Windows.Forms.Button();
             this.pnlKategori.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
@@ -286,13 +287,27 @@
             this.btnCikis.UseVisualStyleBackColor = true;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
+            // btnNotDefteri
+            // 
+            this.btnNotDefteri.FlatAppearance.BorderSize = 0;
+            this.btnNotDefteri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotDefteri.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnNotDefteri.Image = ((System.Drawing.Image)(resources.GetObject("btnNotDefteri.Image")));
+            this.btnNotDefteri.Location = new System.Drawing.Point(928, 443);
+            this.btnNotDefteri.Name = "btnNotDefteri";
+            this.btnNotDefteri.Size = new System.Drawing.Size(60, 70);
+            this.btnNotDefteri.TabIndex = 10;
+            this.btnNotDefteri.UseVisualStyleBackColor = true;
+            this.btnNotDefteri.Click += new System.EventHandler(this.btnNotDefteri_Click);
+            // 
             // frmAnasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 525);
+            this.Controls.Add(this.btnNotDefteri);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlKategori);
             this.Controls.Add(this.pnlUst);
@@ -324,5 +339,6 @@
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Button btnEklentiler;
         private System.Windows.Forms.Button btnProfil;
+        private System.Windows.Forms.Button btnNotDefteri;
     }
 }
