@@ -23,12 +23,16 @@ namespace BilgiOptik.Model
 
         public int? urunID { get; set; }
 
+     
+
         [Column(TypeName = "money")]
         public decimal? toplamTutar { get; set; }
 
         public int? odemeTurID { get; set; }
 
         public DateTime? tarih { get; set; }
+
+        public virtual GozGecmis GozGecmis1 { get; set; }
 
         public virtual Kullanici Kullanici { get; set; }
 

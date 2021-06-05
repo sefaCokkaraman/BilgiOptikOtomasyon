@@ -21,7 +21,7 @@ namespace BilgiOptik.Model
 
         public int kategoriID { get; set; }
 
-        public int tedarikciID { get; set; }
+        public int? tedarikciID { get; set; }
 
         [StringLength(500)]
         public string urunAdi { get; set; }

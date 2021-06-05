@@ -68,6 +68,7 @@
             this.txtSolUzakSph.Size = new System.Drawing.Size(43, 26);
             this.txtSolUzakSph.TabIndex = 0;
             this.txtSolUzakSph.Text = "0";
+            this.txtSolUzakSph.TextChanged += new System.EventHandler(this.txtSolUzakSph_TextChanged);
             // 
             // txtSolUzakCyl
             // 
@@ -77,6 +78,7 @@
             this.txtSolUzakCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSolUzakCyl.TabIndex = 1;
             this.txtSolUzakCyl.Text = "0";
+            this.txtSolUzakCyl.TextChanged += new System.EventHandler(this.txtSolUzakCyl_TextChanged);
             // 
             // txtSolUzakAxis
             // 
@@ -86,6 +88,7 @@
             this.txtSolUzakAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSolUzakAxis.TabIndex = 2;
             this.txtSolUzakAxis.Text = "0";
+            this.txtSolUzakAxis.TextChanged += new System.EventHandler(this.txtSolUzakAxis_TextChanged);
             // 
             // label1
             // 
@@ -166,6 +169,7 @@
             this.txtSolYakinAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSolYakinAxis.TabIndex = 8;
             this.txtSolYakinAxis.Text = "0";
+            this.txtSolYakinAxis.TextChanged += new System.EventHandler(this.txtSolYakinAxis_TextChanged);
             // 
             // txtSolYakinCyl
             // 
@@ -175,6 +179,7 @@
             this.txtSolYakinCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSolYakinCyl.TabIndex = 7;
             this.txtSolYakinCyl.Text = "0";
+            this.txtSolYakinCyl.TextChanged += new System.EventHandler(this.txtSolYakinCyl_TextChanged);
             // 
             // txtSolYakinSph
             // 
@@ -184,6 +189,7 @@
             this.txtSolYakinSph.Size = new System.Drawing.Size(43, 26);
             this.txtSolYakinSph.TabIndex = 6;
             this.txtSolYakinSph.Text = "0";
+            this.txtSolYakinSph.TextChanged += new System.EventHandler(this.txtSolYakinSph_TextChanged);
             // 
             // lblSağGöz
             // 
@@ -203,6 +209,7 @@
             this.txtSolDaimiAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSolDaimiAxis.TabIndex = 14;
             this.txtSolDaimiAxis.Text = "0";
+            this.txtSolDaimiAxis.TextChanged += new System.EventHandler(this.txtSolDaimiAxis_TextChanged);
             // 
             // txtSolDaimiCyl
             // 
@@ -212,6 +219,7 @@
             this.txtSolDaimiCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSolDaimiCyl.TabIndex = 13;
             this.txtSolDaimiCyl.Text = "0";
+            this.txtSolDaimiCyl.TextChanged += new System.EventHandler(this.txtSolDaimiCyl_TextChanged);
             // 
             // txtSolDaimiSph
             // 
@@ -221,6 +229,7 @@
             this.txtSolDaimiSph.Size = new System.Drawing.Size(43, 26);
             this.txtSolDaimiSph.TabIndex = 12;
             this.txtSolDaimiSph.Text = "0";
+            this.txtSolDaimiSph.TextChanged += new System.EventHandler(this.txtSolDaimiSph_TextChanged);
             // 
             // btnKaydet
             // 
@@ -242,6 +251,7 @@
             this.txtSagUzakSph.Size = new System.Drawing.Size(43, 26);
             this.txtSagUzakSph.TabIndex = 3;
             this.txtSagUzakSph.Text = "0";
+            this.txtSagUzakSph.TextChanged += new System.EventHandler(this.txtSagUzakSph_TextChanged);
             // 
             // txtSagUzakCyl
             // 
@@ -251,6 +261,7 @@
             this.txtSagUzakCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSagUzakCyl.TabIndex = 4;
             this.txtSagUzakCyl.Text = "0";
+            this.txtSagUzakCyl.TextChanged += new System.EventHandler(this.txtSagUzakCyl_TextChanged);
             // 
             // txtSagUzakAxis
             // 
@@ -260,6 +271,7 @@
             this.txtSagUzakAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSagUzakAxis.TabIndex = 5;
             this.txtSagUzakAxis.Text = "0";
+            this.txtSagUzakAxis.TextChanged += new System.EventHandler(this.txtSagUzakAxis_TextChanged);
             // 
             // label11
             // 
@@ -299,6 +311,7 @@
             this.txtSagYakinSph.Size = new System.Drawing.Size(43, 26);
             this.txtSagYakinSph.TabIndex = 9;
             this.txtSagYakinSph.Text = "0";
+            this.txtSagYakinSph.TextChanged += new System.EventHandler(this.txtSagYakinSph_TextChanged);
             // 
             // txtSagYakinCyl
             // 
@@ -308,6 +321,7 @@
             this.txtSagYakinCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSagYakinCyl.TabIndex = 10;
             this.txtSagYakinCyl.Text = "0";
+            this.txtSagYakinCyl.TextChanged += new System.EventHandler(this.txtSagYakinCyl_TextChanged);
             // 
             // txtSagYakinAxis
             // 
@@ -317,6 +331,7 @@
             this.txtSagYakinAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSagYakinAxis.TabIndex = 11;
             this.txtSagYakinAxis.Text = "0";
+            this.txtSagYakinAxis.TextChanged += new System.EventHandler(this.txtSagYakinAxis_TextChanged);
             // 
             // txtSagDaimiSph
             // 
@@ -326,6 +341,7 @@
             this.txtSagDaimiSph.Size = new System.Drawing.Size(43, 26);
             this.txtSagDaimiSph.TabIndex = 15;
             this.txtSagDaimiSph.Text = "0";
+            this.txtSagDaimiSph.TextChanged += new System.EventHandler(this.txtSagDaimiSph_TextChanged);
             // 
             // txtSagDaimiCyl
             // 
@@ -335,6 +351,7 @@
             this.txtSagDaimiCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSagDaimiCyl.TabIndex = 16;
             this.txtSagDaimiCyl.Text = "0";
+            this.txtSagDaimiCyl.TextChanged += new System.EventHandler(this.txtSagDaimiCyl_TextChanged);
             // 
             // txtSagDaimiAxis
             // 
@@ -344,6 +361,7 @@
             this.txtSagDaimiAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSagDaimiAxis.TabIndex = 17;
             this.txtSagDaimiAxis.Text = "0";
+            this.txtSagDaimiAxis.TextChanged += new System.EventHandler(this.txtSagDaimiAxis_TextChanged);
             // 
             // frmGozNumara
             // 
@@ -387,6 +405,7 @@
             this.MinimizeBox = false;
             this.Name = "frmGozNumara";
             this.Text = "GÖZ NUMARA KONTROL";
+            this.Load += new System.EventHandler(this.frmGozNumara_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

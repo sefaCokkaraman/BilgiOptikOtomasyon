@@ -9,6 +9,12 @@ namespace BilgiOptik.Model
     [Table("gozDaimi")]
     public partial class gozDaimi
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public gozDaimi()
+        {
+            GozGecmis = new HashSet<GozGecmis>();
+        }
+
         public int gozDaimiID { get; set; }
 
         public int musteriID { get; set; }
@@ -28,5 +34,8 @@ namespace BilgiOptik.Model
         public DateTime? tarih { get; set; }
 
         public virtual Musteri Musteri { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<GozGecmis> GozGecmis { get; set; }
     }
 }

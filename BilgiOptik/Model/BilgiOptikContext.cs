@@ -17,6 +17,7 @@ namespace BilgiOptik.Model
         public virtual DbSet<Goz> Goz { get; set; }
         public virtual DbSet<gozDaimi> gozDaimi { get; set; }
         public virtual DbSet<GozDerece> GozDerece { get; set; }
+        public virtual DbSet<GozGecmis> GozGecmis { get; set; }
         public virtual DbSet<GozNumara> GozNumara { get; set; }
         public virtual DbSet<gozUzak> gozUzak { get; set; }
         public virtual DbSet<gozYakin> gozYakin { get; set; }
@@ -180,6 +181,10 @@ namespace BilgiOptik.Model
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<Satis>()
+                .HasOptional(e => e.GozGecmis1)
+                .WithRequired(e => e.Satis);
+
+            modelBuilder.Entity<Satis>()
                 .HasMany(e => e.Sikayet)
                 .WithRequired(e => e.Satis)
                 .WillCascadeOnDelete(false);
@@ -187,11 +192,6 @@ namespace BilgiOptik.Model
             modelBuilder.Entity<Tedarikci>()
                 .Property(e => e.telefon)
                 .HasPrecision(13, 0);
-
-            modelBuilder.Entity<Tedarikci>()
-                .HasMany(e => e.Urun)
-                .WithRequired(e => e.Tedarikci)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<TedarikciGider>()
                 .Property(e => e.birimFiyat)

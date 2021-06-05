@@ -89,6 +89,14 @@ namespace BilgiOptik
                     db.gozDaimi.Add(daimi);
                     db.SaveChanges();
                 }
+                GozGecmis gozGecmis = new GozGecmis();
+                gozGecmis.gozDaimiID = daimi.gozDaimiID;
+                gozGecmis.gozUzakID= uzak.gozUzakID;
+                gozGecmis.gozYakinID = yakin.gozYakinID;
+                gozGecmis.gozGecmisID = Program.SatisGozArasiID;
+                db.GozGecmis.Add(gozGecmis);
+                db.SaveChanges();
+
                 MessageBox.Show("Göz Numaraları Alınmıştır", "Göz Numara", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DialogResult dialog = MessageBox.Show("Satın Alma İşleminiz Başarıyla Gerçekleştirilmiştir." +
                 "\nÖdeme Alanına gitmek için Evet gitmemek için Hayır butonuna basınız.",
@@ -104,6 +112,101 @@ namespace BilgiOptik
                     this.Hide();
                 }
             }
+        }
+
+        private void frmGozNumara_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolYakinSph_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolDaimiSph_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolDaimiCyl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolYakinCyl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolUzakCyl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolUzakAxis_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolUzakSph_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolYakinAxis_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolDaimiAxis_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSagDaimiSph_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSagYakinSph_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSagUzakSph_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSagUzakCyl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSagYakinCyl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSagDaimiCyl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSagDaimiAxis_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSagYakinAxis_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSagUzakAxis_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

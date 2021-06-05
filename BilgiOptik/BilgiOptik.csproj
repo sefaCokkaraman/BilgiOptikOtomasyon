@@ -192,6 +192,7 @@
     <Compile Include="Model\Goz.cs" />
     <Compile Include="Model\gozDaimi.cs" />
     <Compile Include="Model\GozDerece.cs" />
+    <Compile Include="Model\GozGecmis.cs" />
     <Compile Include="Model\GozNumara.cs" />
     <Compile Include="Model\gozUzak.cs" />
     <Compile Include="Model\gozYakin.cs" />

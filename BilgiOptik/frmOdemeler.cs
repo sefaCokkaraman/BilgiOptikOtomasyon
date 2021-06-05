@@ -26,7 +26,6 @@ namespace BilgiOptik
 
 
 
-        Label[] labels;
 
         public frmOdemeler()
         {
@@ -114,17 +113,21 @@ namespace BilgiOptik
             if (musteri != null &&gelenUrun !=null)
             {
                 GelenMusteriGoster(musteri);
-
+              
 
                 txtOdemeTuru.Text = gelenSatis.OdemeTur.adi;
                 txtPersonel.Text = db.Kullanici.Where(x => x.kullaniciID == gelenSatis.kullaniciID).Select(x => x.kullaniciAdi).SingleOrDefault();
                 txtToplamTutar.Text = Convert.ToDecimal(gelenSatis.toplamTutar).ToString("c");
-                txtSiparisID.Text = gelenSatis.satisID.ToString();
+              
                 txtUrunAdi.Text = gelenUrun.urunAdi;
-
+            
 
             }
 
+            else
+            {
+                btnCikisYap.Enabled = false;
+            }
 
 
 
@@ -173,8 +176,11 @@ namespace BilgiOptik
         private void dgvMusteriAldiklari_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             int siparis = (int)dgvMusteriAldiklari.CurrentRow.Cells[0].Value;
+            int gozGecmisid = (int)dgvMusteriAldiklari.CurrentRow.Cells[1].Value;
 
             var sorgu = db.Satis.Find(siparis);
+            var goz = db.GozGecmis.Find(gozGecmisid);
+
 
             var entryPoint = (from sa in db.Satis
 
@@ -182,19 +188,44 @@ namespace BilgiOptik
                               select new
                               {
                                   SatisID = sa.satisID,
+                                  GozGecmisi = sa.GozGecmis1.gozGecmisID,
                                   SatanPersonel = sa.Kullanici.kullaniciAdi,
                                   UrunAdi = sa.Urun.urunAdi,
                                   Tutari = sa.toplamTutar,
                                   OdemeTipi = sa.OdemeTur.adi,
                                   Personel = sa.Kullanici.kullaniciAdi,
                                   Tarihi = sa.tarih
+                                
+                            
                               }).SingleOrDefault();
 
             txtOdemeTuru.Text = entryPoint.OdemeTipi;
             txtPersonel.Text = entryPoint.Personel;
             txtToplamTutar.Text = Convert.ToDecimal(entryPoint.Tutari).ToString("c");
-            txtSiparisID.Text = entryPoint.SatisID.ToString();
+  
             txtUrunAdi.Text = entryPoint.UrunAdi;
+            //uzak.musteriID = Program.id;
+            //uzak.solAxis = decimal.Parse(txtSolUzakAxis.Text);
+            //uzak.solCyl = decimal.Parse(txtSolUzakCyl.Text);
+            //uzak.solSph = decimal.Parse(txtSolUzakSph.Text);
+            txtSolUzakAxis.Text = (goz.gozUzak.solAxis).ToString();
+            txtSolUzakCyl.Text = (goz.gozUzak.solCyl).ToString();
+            txtSolUzakSph.Text = (goz.gozUzak.solSph).ToString();
+            txtSagUzakAxis.Text = (goz.gozUzak.sagAxis).ToString();
+            txtSagUzakCyl.Text = (goz.gozUzak.sagCyl).ToString();
+            txtSagUzakSph.Text = (goz.gozUzak.sagSph).ToString();
+            txtSagDaimiAxis.Text = (goz.gozDaimi.sagAxis).ToString();
+            txtSagDaimiCyl.Text = (goz.gozDaimi.sagCyl).ToString();
+            txtSagDaimiSph.Text = (goz.gozDaimi.sagSph).ToString();
+            txtSolDaimiAxis.Text = (goz.gozDaimi.solAxis).ToString();
+            txtSolDaimiCyl.Text = (goz.gozDaimi.solCyl).ToString();
+            txtSolDaimiSph.Text= (goz.gozDaimi.solSph).ToString();
+            txtSagYakinAxis.Text= (goz.gozYakin.sagAxis).ToString();
+            txtSagYakinCyl.Text= (goz.gozYakin.sagCyl).ToString();
+            txtSagYakinSph.Text= (goz.gozYakin.sagSph).ToString();
+            txtSolYakinAxis.Text= (goz.gozYakin.solAxis).ToString();
+            txtSolYakinCyl.Text= (goz.gozYakin.solCyl).ToString();
+            txtSolYakinSph.Text= (goz.gozYakin.solSph).ToString();  
 
         }
 
@@ -241,9 +272,11 @@ namespace BilgiOptik
 
             var entryPoint = (from sa in db.Satis
                               where sa.Musteri.TCKimlikNo == m.TCKimlikNo
-                              select new
+                              select new    
                               {
-                                  SatisID = sa.satisID,
+                               SatisID=sa.satisID,
+
+                                  GozGecmisi = sa.GozGecmis1.gozGecmisID,
                                   SatanPersonel = sa.Kullanici.kullaniciAdi,
                                   UrunAdi = sa.Urun.urunAdi,
                                   Tutari = sa.toplamTutar,
@@ -254,13 +287,51 @@ namespace BilgiOptik
 
 
             dgvMusteriAldiklari.DataSource = entryPoint.ToList();
-            txtMusteriAdi.Text = Ymusteri.adi;
-            txtMusteriSoyadi.Text = Ymusteri.soyadi;
-            txtTcKimlik.Text = Ymusteri.TCKimlikNo;
+            dgvMusteriAldiklari.Columns["SiparisID"].Visible = false;
+            dgvMusteriAldiklari.Columns["GozGecmisi"].Visible = false;
+
+
+            txtMusteriAdi.Text = Ymusteri.adi +" " + Ymusteri.soyadi;
+       
             txtTelefon.Text = Ymusteri.telefon.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpBoxGozNumaraları_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolUzakCyl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolYakinSph_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolUzakSph_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSolDaimiSph_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOde_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpBoxMusteriBilgi_Enter(object sender, EventArgs e)
         {
 
         }
@@ -278,20 +349,22 @@ namespace BilgiOptik
                               where sa.Musteri.TCKimlikNo == txtMusteriTC.Text   
                               select new
                               {
-                                  SatisID = sa.satisID,
+                                  SiparisID=sa.satisID,
+                                  GozGecmisi=sa.GozGecmis1.gozGecmisID,
                                   SatanPersonel = sa.Kullanici.kullaniciAdi,
-                                  //UrunAdi = sa.Urun.urunAdi,
-                                  //Tutari = sa.toplamTutar,
-                                  //OdemeTipi=sa.OdemeTur.Adi,
+                                  UrunAdi = sa.Urun.urunAdi,
+                                  Tutari = sa.toplamTutar,
+                                  OdemeTipi = sa.OdemeTur.adi,
                                   Tarihi = sa.tarih
                               }).ToList();
 
-
+           
 
             dgvMusteriAldiklari.DataSource = entryPoint.ToList();
-            txtMusteriAdi.Text = Ymusteri.adi;
-            txtMusteriSoyadi.Text = Ymusteri.soyadi;
-            txtTcKimlik.Text = Ymusteri.TCKimlikNo;
+            dgvMusteriAldiklari.Columns["SiparisID"].Visible = false;
+            dgvMusteriAldiklari.Columns["GozGecmisi"].Visible = false;
+            txtMusteriAdi.Text = Ymusteri.adi+" "+ Ymusteri.soyadi;
+           
             txtTelefon.Text = Ymusteri.telefon.ToString();
         }
     }

@@ -33,12 +33,31 @@ namespace BilgiOptik
         BilgiOptikContext db = new BilgiOptikContext();
         Kullanici k = new Kullanici();
 
+        private void giris()
+        {
+            formlarArasıGecis.giris.Show();
+            this.Hide();
+        }
+
+        private void lblAktivasyonCikis_Click(object sender, EventArgs e)
+        {
+            giris();
+        }
+
+        private void lblSifreCikis_Click(object sender, EventArgs e)
+        {
+            giris();
+        }
+
+        private void lblKullaniciCikis_Click(object sender, EventArgs e)
+        {
+            giris();
+        }
+
         public void btnSifremiUnuttum_Click(object sender, EventArgs e)
         {
             kullanici = txtKadi.Text;
             Kullanici k = db.Kullanici.Where(d => d.kullaniciAdi == kullanici).SingleOrDefault();
-            BilgiOptikFirma bilgiOptikFirma = db.BilgiOptikFirma.FirstOrDefault();
-            
 
             if (k != null)
             {
@@ -51,8 +70,8 @@ namespace BilgiOptik
                     guvenlikSifresi = (rand.Next(999999)).ToString();
                     MailMessage message = new MailMessage();
                     to = (k.eposta).ToString();
-                    mail =bilgiOptikFirma.email;
-                    sifre = bilgiOptikFirma.sifre;
+                    mail = "bilgioptikyazilim@gmail.com";
+                    sifre = "sefafurkanC#6054";
                     mesaj = "Merhaba, \n \n" + bilgioptik + " hesap şifreni değiştirmek için " + guvenlikSifresi + " aktivasyon kodunu gir." +
                     "\n \nDaha önce de şifre değişikliği için talepte bulunduysan yalnızca en son gelen epostadaki kod geçerlidir." 
                     +  " \n \nBu siz değilseniz: \n \n" + bilgioptik + " Masaüstü hesabınıza başkası giriş yapmış olabilir. Hesabınızın güvenliği için parolanızı sıfırlamayı ve" +
@@ -86,8 +105,8 @@ namespace BilgiOptik
         {
             if(txtAktivasyonKodu.Text == guvenlikSifresi)
             {
-                pnlYeniSifre.Visible = true;
                 pnlAktivasyonkodu.Visible = false;
+                pnlYeniSifre.Visible = true;
             }
             else
             {

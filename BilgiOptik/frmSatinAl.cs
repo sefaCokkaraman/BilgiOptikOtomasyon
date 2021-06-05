@@ -256,6 +256,7 @@ namespace BilgiOptik
                 this.Hide();
                 db.Satis.Add(s);
                 db.SaveChanges();
+                Program.SatisGozArasiID = s.satisID;
                 txtMusteriTC.Clear();
                 txtUrun.Clear();
                 //id = 0;
