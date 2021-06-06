@@ -32,6 +32,12 @@ namespace BilgiOptik
 
         BilgiOptikContext db = new BilgiOptikContext();
         Kullanici k = new Kullanici();
+        BilgiOptikFirma bof = new BilgiOptikFirma();
+
+        private void frmSifremiUnuttum_Load(object sender, EventArgs e)
+        {
+            bof = db.BilgiOptikFirma.FirstOrDefault();
+        }
 
         private void giris()
         {
@@ -70,8 +76,8 @@ namespace BilgiOptik
                     guvenlikSifresi = (rand.Next(999999)).ToString();
                     MailMessage message = new MailMessage();
                     to = (k.eposta).ToString();
-                    mail = "bilgioptikyazilim@gmail.com";
-                    sifre = "sefafurkanC#6054";
+                    mail = bof.email;
+                    sifre = bof.sifre;
                     mesaj = "Merhaba, \n \n" + bilgioptik + " hesap şifreni değiştirmek için " + guvenlikSifresi + " aktivasyon kodunu gir." +
                     "\n \nDaha önce de şifre değişikliği için talepte bulunduysan yalnızca en son gelen epostadaki kod geçerlidir." 
                     +  " \n \nBu siz değilseniz: \n \n" + bilgioptik + " Masaüstü hesabınıza başkası giriş yapmış olabilir. Hesabınızın güvenliği için parolanızı sıfırlamayı ve" +
@@ -88,7 +94,7 @@ namespace BilgiOptik
                     smtp.Credentials = new NetworkCredential(mail, sifre);
 
                     smtp.Send(message);
-                    MessageBox.Show(" Merhaba " + kullanici +" \nEposta adresine aktivasyon kodu gönderilmiştir");
+                    MessageBox.Show("Merhaba " + kullanici +" \nEposta adresine aktivasyon kodu gönderilmiştir");
                 }
                 catch (Exception ex)
                 {

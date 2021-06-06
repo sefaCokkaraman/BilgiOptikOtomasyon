@@ -14,9 +14,56 @@ namespace BilgiOptik
 {
     public partial class frmAnasayfa : Form
     {
+        int id = 0;
+        string baslik, aciklama;
+        BilgiOptikContext db = new BilgiOptikContext();
         public frmAnasayfa()
         {
             InitializeComponent();
+        }
+
+        private void frmAnasayfa_Load(object sender, EventArgs e)
+        {
+            Listele();
+            NotDefteriGoster();
+        }
+
+        public void Listele()
+        {
+            var liste = db.NotDefteri.Where(x => x.kullaniciID == Program.k.kullaniciID).ToList();
+            lstGecmisNotlar.DataSource = liste;
+            lstGecmisNotlar.ValueMember = "notDefteriID";
+            lstGecmisNotlar.DisplayMember = "notu";
+        }
+
+        public void NotDefteriGoster()
+        {
+            if (Program.notDefteri == true)
+            {
+                txtBaslik.Visible = true;
+                rtbMesaj.Visible = true;
+                lstGecmisNotlar.Visible = true;
+            }
+        }
+
+        private void btnAjanda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Yakında Eklenilcek...");
+        }
+
+        public void sorgu()
+        {
+            id = (int)lstGecmisNotlar.SelectedValue;
+            var sorgu = db.NotDefteri.Find(id);
+            baslik = sorgu.baslik;
+            aciklama = sorgu.notu;
+        }
+        private void lstGecmisNotlar_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            sorgu();
+
+            txtBaslik.Text = baslik;
+            rtbMesaj.Text = aciklama;
         }
 
         private void btnKayit_Click(object sender, EventArgs e)
@@ -79,6 +126,10 @@ namespace BilgiOptik
             this.Hide();
             pnlMenu.Height = 75;
         }
+        private void btnEklentiler_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.ayarlar.Show();
+        }
 
         private void btnCikis_Click(object sender, EventArgs e)
         {
@@ -90,8 +141,7 @@ namespace BilgiOptik
 
         private void btnNotDefteri_Click(object sender, EventArgs e)
         {
-            FormAcma.notDefteri.Show();
-            this.Hide();
+            formlarArasıGecis.notDefteri.Show();
         }
     }
 }

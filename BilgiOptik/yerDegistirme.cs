@@ -8,10 +8,5 @@ namespace BilgiOptik
 {
     class yerDegistirme
     {
-
-        //bool move;
-        //int mouse_X;
-        //int mouse_Y;
-
     }
 }

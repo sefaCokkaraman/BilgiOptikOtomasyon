@@ -21,56 +21,9 @@ namespace BilgiOptik
 
         BilgiOptikContext db = new BilgiOptikContext();
 
-        private void btnAnasayfa_Click(object sender, EventArgs e)
-        {
-            FormAcma.Anasayfa.Show();
-            this.Hide();
-        }
-
-        private void btnKayit_Click(object sender, EventArgs e)
-        {
-            FormAcma.kayit.Show();
-
-            this.Hide();
-        }
-
-        private void btnUrunler_Click(object sender, EventArgs e)
-        {
-            FormAcma.urunler.Show();
-            this.Hide();
-        }
-
-        private void btnBilgiler_Click(object sender, EventArgs e)
-        {
-            FormAcma.bilgiler.Show();
-            this.Hide();
-        }
-
-        private void btnOdemeler_Click(object sender, EventArgs e)
-        {
-            FormAcma.odemeler.Show();
-
-            this.Hide();
-        }
-
-        private void btnSatinAl_Click(object sender, EventArgs e)
-        {
-            FormAcma.satinAl.Show();
-            this.Hide();
-        }
-
-        private void btnAyarlar_Click(object sender, EventArgs e)
-        {
-            FormAcma.ayarlar.Show();
-            this.Hide();
-        }
-
-
-
-
         private void frmUrunler_Load(object sender, EventArgs e)
         {
-            if (Program.k.yetkiID==2)
+            if (Program.k.yetkiID == 2)
             {
                 btnUrunEkle.Visible = false;
                 btnKategoriEkle.Visible = false;
@@ -85,7 +38,7 @@ namespace BilgiOptik
                 cmsUrunlerGrid.Enabled = false;
 
 
-                
+
 
 
             }
@@ -169,11 +122,11 @@ namespace BilgiOptik
         }
         private void dgwUrunler_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            if (Program.k.yetkiID!=2)
+            if (Program.k.yetkiID != 2)
             {
                 UrunGuncelle();
 
-            } 
+            }
 
         }
         #endregion
@@ -267,7 +220,7 @@ namespace BilgiOptik
                 }
 
             }
-            
+
 
         }
 
@@ -307,6 +260,81 @@ namespace BilgiOptik
             {
                 MessageBox.Show("Lütfen bi ürün seçiniz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+        }
+
+        private void btnAnasayfa_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.Anasayfa.Show();
+            this.Hide();
+        }
+
+        private void btnKayit_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.kayit.Show();
+            this.Hide();
+        }
+
+        private void btnBilgiler_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.bilgiler.Show();
+            this.Hide();
+        }
+
+        private void btnOdemeler_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.odemeler.Show();
+            this.Hide();
+        }
+
+        private void btnSatinAl_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.satinAl.Show();
+            this.Hide();
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (pnlKategori.Width != btnMenu.Width)
+            {
+                pnlKategori.Width = btnMenu.Width;
+            }
+            else
+            {
+                pnlKategori.Width = btnAnasayfa.Width;
+            }
+        }
+
+        private void btnAvatar_Click(object sender, EventArgs e)
+        {
+            if (pnlMenu.Height == 75)
+            {
+                pnlMenu.Height = 243;
+            }
+            else
+            {
+                pnlMenu.Height = 75;
+            }
+        }
+
+        private void btnProfil_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.profilbilgi.Show();
+            this.Hide();
+            pnlMenu.Height = 75;
+        }
+
+        private void btnEklentiler_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.ayarlar.Show();
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.giris.Show();
+            pnlMenu.Height = 75;
+            pnlKategori.Width = 130;
+            this.Hide();
 
         }
     }

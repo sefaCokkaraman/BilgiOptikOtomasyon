@@ -18,10 +18,14 @@ namespace BilgiOptik
         public frmNotDefteri()
         {
             InitializeComponent();
+        }
+
+        private void frmNotDefteri_Load(object sender, EventArgs e)
+        {
             Listele();
         }
 
-        private void Listele()
+        public void Listele()
         {
             var liste = db.NotDefteri.Where(x => x.kullaniciID == Program.k.kullaniciID).ToList();
             lstGecmisNotlar.DataSource = liste;
@@ -29,14 +33,9 @@ namespace BilgiOptik
             lstGecmisNotlar.DisplayMember = "notu";
         }
 
-        //private void frmNotDefteri_Load(object sender, EventArgs e)
-        //{
-        //    Listele();
-        //}
-
         int id = 0;
         string baslik, aciklama;
-        private void sorgu()
+        public void sorgu()
         {
             id = (int)lstGecmisNotlar.SelectedValue;
             var sorgu = db.NotDefteri.Find(id);

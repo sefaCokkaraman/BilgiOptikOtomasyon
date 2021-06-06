@@ -43,19 +43,22 @@
             this.btnProfil = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
             this.pnlUst = new System.Windows.Forms.Panel();
-            this.lblAnasayfa = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
+            this.txtTCKimlikNo = new System.Windows.Forms.TextBox();
+            this.txtEposta = new System.Windows.Forms.TextBox();
+            this.btnGuncelle = new System.Windows.Forms.Button();
+            this.cbOnay = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.rtbAdres = new System.Windows.Forms.RichTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.mtbTelefon = new System.Windows.Forms.MaskedTextBox();
             this.pnlKategori.SuspendLayout();
             this.pnlMenu.SuspendLayout();
-            this.pnlUst.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlKategori
@@ -292,95 +295,141 @@
             // pnlUst
             // 
             this.pnlUst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
-            this.pnlUst.Controls.Add(this.lblAnasayfa);
             this.pnlUst.Location = new System.Drawing.Point(0, 0);
             this.pnlUst.Name = "pnlUst";
             this.pnlUst.Size = new System.Drawing.Size(1000, 75);
             this.pnlUst.TabIndex = 12;
             // 
-            // lblAnasayfa
+            // txtKullaniciAdi
             // 
-            this.lblAnasayfa.AutoSize = true;
-            this.lblAnasayfa.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAnasayfa.ForeColor = System.Drawing.Color.White;
-            this.lblAnasayfa.Location = new System.Drawing.Point(354, 18);
-            this.lblAnasayfa.Name = "lblAnasayfa";
-            this.lblAnasayfa.Size = new System.Drawing.Size(193, 38);
-            this.lblAnasayfa.TabIndex = 3;
-            this.lblAnasayfa.Text = "ANASAYFA";
+            this.txtKullaniciAdi.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(255, 93);
+            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(256, 29);
+            this.txtKullaniciAdi.TabIndex = 1;
             // 
-            // textBox1
+            // txtSifre
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(171, 121);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 29);
-            this.textBox1.TabIndex = 14;
+            this.txtSifre.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtSifre.Location = new System.Drawing.Point(255, 131);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(256, 29);
+            this.txtSifre.TabIndex = 2;
             // 
-            // textBox2
+            // txtTCKimlikNo
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(171, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(256, 29);
-            this.textBox2.TabIndex = 15;
+            this.txtTCKimlikNo.Enabled = false;
+            this.txtTCKimlikNo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtTCKimlikNo.Location = new System.Drawing.Point(255, 169);
+            this.txtTCKimlikNo.Name = "txtTCKimlikNo";
+            this.txtTCKimlikNo.Size = new System.Drawing.Size(256, 29);
+            this.txtTCKimlikNo.TabIndex = 3;
             // 
-            // textBox3
+            // txtEposta
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(171, 233);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(256, 29);
-            this.textBox3.TabIndex = 17;
+            this.txtEposta.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtEposta.Location = new System.Drawing.Point(255, 245);
+            this.txtEposta.Name = "txtEposta";
+            this.txtEposta.Size = new System.Drawing.Size(256, 29);
+            this.txtEposta.TabIndex = 5;
             // 
-            // textBox4
+            // btnGuncelle
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(171, 196);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(256, 29);
-            this.textBox4.TabIndex = 16;
+            this.btnGuncelle.Location = new System.Drawing.Point(255, 414);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(256, 29);
+            this.btnGuncelle.TabIndex = 10;
+            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
-            // textBox5
+            // cbOnay
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox5.Location = new System.Drawing.Point(171, 308);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(256, 29);
-            this.textBox5.TabIndex = 19;
+            this.cbOnay.AutoSize = true;
+            this.cbOnay.Location = new System.Drawing.Point(255, 388);
+            this.cbOnay.Name = "cbOnay";
+            this.cbOnay.Size = new System.Drawing.Size(187, 17);
+            this.cbOnay.TabIndex = 9;
+            this.cbOnay.Text = "Bilgileri Güncellemeyi Onaylıyorum.";
+            this.cbOnay.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // label1
             // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox6.Location = new System.Drawing.Point(171, 271);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(256, 29);
-            this.textBox6.TabIndex = 18;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(145, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 21);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Kullanıcı Adı:";
             // 
-            // textBox7
+            // label2
             // 
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox7.Location = new System.Drawing.Point(171, 383);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(256, 29);
-            this.textBox7.TabIndex = 21;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(200, 138);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 21);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Şifre:";
             // 
-            // textBox8
+            // label3
             // 
-            this.textBox8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.textBox8.Location = new System.Drawing.Point(171, 346);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(256, 29);
-            this.textBox8.TabIndex = 20;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(180, 212);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 21);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Telefon:";
             // 
-            // button1
+            // label4
             // 
-            this.button1.Location = new System.Drawing.Point(171, 421);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 29);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(138, 175);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 21);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "T.C Kimlik No:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(185, 249);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 21);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Eposta:";
+            // 
+            // rtbAdres
+            // 
+            this.rtbAdres.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.rtbAdres.Location = new System.Drawing.Point(255, 283);
+            this.rtbAdres.Name = "rtbAdres";
+            this.rtbAdres.Size = new System.Drawing.Size(256, 96);
+            this.rtbAdres.TabIndex = 19;
+            this.rtbAdres.Text = "";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(191, 283);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 21);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Adres:";
+            // 
+            // mtbTelefon
+            // 
+            this.mtbTelefon.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.mtbTelefon.Location = new System.Drawing.Point(255, 207);
+            this.mtbTelefon.Mask = "(999) 000-0000";
+            this.mtbTelefon.Name = "mtbTelefon";
+            this.mtbTelefon.Size = new System.Drawing.Size(256, 29);
+            this.mtbTelefon.TabIndex = 21;
             // 
             // frmProfil
             // 
@@ -389,15 +438,20 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 525);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.mtbTelefon);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.rtbAdres);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbOnay);
+            this.Controls.Add(this.btnGuncelle);
+            this.Controls.Add(this.txtEposta);
+            this.Controls.Add(this.txtTCKimlikNo);
+            this.Controls.Add(this.txtSifre);
+            this.Controls.Add(this.txtKullaniciAdi);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlKategori);
             this.Controls.Add(this.pnlUst);
@@ -409,8 +463,6 @@
             this.Load += new System.EventHandler(this.frmProfil_Load);
             this.pnlKategori.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
-            this.pnlUst.ResumeLayout(false);
-            this.pnlUst.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,15 +483,19 @@
         private System.Windows.Forms.Button btnProfil;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Panel pnlUst;
-        private System.Windows.Forms.Label lblAnasayfa;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtKullaniciAdi;
+        private System.Windows.Forms.TextBox txtSifre;
+        private System.Windows.Forms.TextBox txtTCKimlikNo;
+        private System.Windows.Forms.TextBox txtEposta;
+        private System.Windows.Forms.Button btnGuncelle;
+        private System.Windows.Forms.CheckBox cbOnay;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RichTextBox rtbAdres;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.MaskedTextBox mtbTelefon;
     }
 }

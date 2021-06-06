@@ -53,16 +53,17 @@
             this.lblTCKimlikNo = new System.Windows.Forms.Label();
             this.rtbAdres = new System.Windows.Forms.RichTextBox();
             this.mtbTelefon = new System.Windows.Forms.MaskedTextBox();
-            this.lblSifre = new System.Windows.Forms.Label();
-            this.lblKullaniciAdi = new System.Windows.Forms.Label();
-            this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
-            this.txtSifre = new System.Windows.Forms.TextBox();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnAvatar = new System.Windows.Forms.Button();
             this.btnEklentiler = new System.Windows.Forms.Button();
             this.btnProfil = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
             this.pnlUst = new System.Windows.Forms.Panel();
+            this.lblFaks = new System.Windows.Forms.Label();
+            this.lblFirmaAd = new System.Windows.Forms.Label();
+            this.lblTedarikciAdSoyad = new System.Windows.Forms.Label();
+            this.lblVergiNo = new System.Windows.Forms.Label();
+            this.txtVergiNo = new System.Windows.Forms.TextBox();
             this.pnlKategori.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
@@ -217,58 +218,60 @@
             // txtSoyad
             // 
             this.txtSoyad.BackColor = System.Drawing.Color.White;
-            this.txtSoyad.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.txtSoyad.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.txtSoyad.ForeColor = System.Drawing.Color.Black;
-            this.txtSoyad.Location = new System.Drawing.Point(271, 142);
+            this.txtSoyad.Location = new System.Drawing.Point(156, 190);
             this.txtSoyad.Multiline = true;
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(257, 35);
+            this.txtSoyad.Size = new System.Drawing.Size(311, 32);
             this.txtSoyad.TabIndex = 12;
             // 
             // txtEposta
             // 
             this.txtEposta.BackColor = System.Drawing.Color.White;
-            this.txtEposta.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.txtEposta.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.txtEposta.ForeColor = System.Drawing.Color.Black;
-            this.txtEposta.Location = new System.Drawing.Point(271, 196);
+            this.txtEposta.Location = new System.Drawing.Point(156, 265);
             this.txtEposta.Multiline = true;
             this.txtEposta.Name = "txtEposta";
-            this.txtEposta.Size = new System.Drawing.Size(257, 35);
+            this.txtEposta.Size = new System.Drawing.Size(311, 32);
             this.txtEposta.TabIndex = 13;
             // 
             // txtTCKimlik
             // 
             this.txtTCKimlik.BackColor = System.Drawing.Color.White;
-            this.txtTCKimlik.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.txtTCKimlik.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.txtTCKimlik.ForeColor = System.Drawing.Color.Black;
-            this.txtTCKimlik.Location = new System.Drawing.Point(271, 304);
+            this.txtTCKimlik.Location = new System.Drawing.Point(156, 417);
             this.txtTCKimlik.MaxLength = 11;
             this.txtTCKimlik.Multiline = true;
             this.txtTCKimlik.Name = "txtTCKimlik";
-            this.txtTCKimlik.Size = new System.Drawing.Size(257, 35);
+            this.txtTCKimlik.Size = new System.Drawing.Size(311, 32);
             this.txtTCKimlik.TabIndex = 15;
             // 
             // txtAd
             // 
             this.txtAd.BackColor = System.Drawing.Color.White;
-            this.txtAd.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.txtAd.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.txtAd.ForeColor = System.Drawing.Color.Black;
-            this.txtAd.Location = new System.Drawing.Point(271, 88);
+            this.txtAd.Location = new System.Drawing.Point(156, 115);
             this.txtAd.Multiline = true;
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(257, 35);
+            this.txtAd.Size = new System.Drawing.Size(311, 32);
             this.txtAd.TabIndex = 16;
             // 
             // btnMKayit
             // 
             this.btnMKayit.BackColor = System.Drawing.Color.White;
+            this.btnMKayit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnMKayit.Enabled = false;
             this.btnMKayit.FlatAppearance.BorderSize = 0;
-            this.btnMKayit.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMKayit.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnMKayit.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold);
             this.btnMKayit.ForeColor = System.Drawing.Color.Black;
-            this.btnMKayit.Location = new System.Drawing.Point(271, 467);
+            this.btnMKayit.Location = new System.Drawing.Point(156, 468);
             this.btnMKayit.Name = "btnMKayit";
-            this.btnMKayit.Size = new System.Drawing.Size(257, 45);
+            this.btnMKayit.Size = new System.Drawing.Size(782, 35);
             this.btnMKayit.TabIndex = 17;
             this.btnMKayit.Text = "KAYIT";
             this.btnMKayit.UseVisualStyleBackColor = false;
@@ -278,7 +281,7 @@
             // 
             this.rbMusteri.AutoSize = true;
             this.rbMusteri.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rbMusteri.Location = new System.Drawing.Point(271, 439);
+            this.rbMusteri.Location = new System.Drawing.Point(522, 417);
             this.rbMusteri.Name = "rbMusteri";
             this.rbMusteri.Size = new System.Drawing.Size(75, 22);
             this.rbMusteri.TabIndex = 22;
@@ -291,7 +294,7 @@
             // 
             this.rbPersonel.AutoSize = true;
             this.rbPersonel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rbPersonel.Location = new System.Drawing.Point(351, 439);
+            this.rbPersonel.Location = new System.Drawing.Point(635, 417);
             this.rbPersonel.Name = "rbPersonel";
             this.rbPersonel.Size = new System.Drawing.Size(85, 22);
             this.rbPersonel.TabIndex = 23;
@@ -304,7 +307,7 @@
             // 
             this.rbTedarikçi.AutoSize = true;
             this.rbTedarikçi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.rbTedarikçi.Location = new System.Drawing.Point(441, 439);
+            this.rbTedarikçi.Location = new System.Drawing.Point(758, 417);
             this.rbTedarikçi.Name = "rbTedarikçi";
             this.rbTedarikçi.Size = new System.Drawing.Size(86, 22);
             this.rbTedarikçi.TabIndex = 24;
@@ -317,11 +320,11 @@
             // 
             this.lblAd.AutoSize = true;
             this.lblAd.BackColor = System.Drawing.Color.Transparent;
-            this.lblAd.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.lblAd.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblAd.ForeColor = System.Drawing.Color.Black;
-            this.lblAd.Location = new System.Drawing.Point(203, 89);
+            this.lblAd.Location = new System.Drawing.Point(151, 84);
             this.lblAd.Name = "lblAd";
-            this.lblAd.Size = new System.Drawing.Size(51, 32);
+            this.lblAd.Size = new System.Drawing.Size(42, 28);
             this.lblAd.TabIndex = 26;
             this.lblAd.Text = "Ad:";
             // 
@@ -329,11 +332,11 @@
             // 
             this.lblSoyad.AutoSize = true;
             this.lblSoyad.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoyad.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.lblSoyad.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblSoyad.ForeColor = System.Drawing.Color.Black;
-            this.lblSoyad.Location = new System.Drawing.Point(167, 143);
+            this.lblSoyad.Location = new System.Drawing.Point(151, 159);
             this.lblSoyad.Name = "lblSoyad";
-            this.lblSoyad.Size = new System.Drawing.Size(87, 32);
+            this.lblSoyad.Size = new System.Drawing.Size(72, 28);
             this.lblSoyad.TabIndex = 27;
             this.lblSoyad.Text = "Soyad:";
             // 
@@ -341,11 +344,11 @@
             // 
             this.lblTelefon.AutoSize = true;
             this.lblTelefon.BackColor = System.Drawing.Color.Transparent;
-            this.lblTelefon.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.lblTelefon.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblTelefon.ForeColor = System.Drawing.Color.Black;
-            this.lblTelefon.Location = new System.Drawing.Point(154, 249);
+            this.lblTelefon.Location = new System.Drawing.Point(151, 309);
             this.lblTelefon.Name = "lblTelefon";
-            this.lblTelefon.Size = new System.Drawing.Size(100, 32);
+            this.lblTelefon.Size = new System.Drawing.Size(84, 28);
             this.lblTelefon.TabIndex = 29;
             this.lblTelefon.Text = "Telefon:";
             // 
@@ -353,11 +356,11 @@
             // 
             this.lblMail.AutoSize = true;
             this.lblMail.BackColor = System.Drawing.Color.Transparent;
-            this.lblMail.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.lblMail.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblMail.ForeColor = System.Drawing.Color.Black;
-            this.lblMail.Location = new System.Drawing.Point(186, 197);
+            this.lblMail.Location = new System.Drawing.Point(151, 234);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(68, 32);
+            this.lblMail.Size = new System.Drawing.Size(55, 28);
             this.lblMail.TabIndex = 28;
             this.lblMail.Text = "Mail:";
             // 
@@ -365,11 +368,11 @@
             // 
             this.lblAdres.AutoSize = true;
             this.lblAdres.BackColor = System.Drawing.Color.Transparent;
-            this.lblAdres.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.lblAdres.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblAdres.ForeColor = System.Drawing.Color.Black;
-            this.lblAdres.Location = new System.Drawing.Point(171, 358);
+            this.lblAdres.Location = new System.Drawing.Point(517, 84);
             this.lblAdres.Name = "lblAdres";
-            this.lblAdres.Size = new System.Drawing.Size(83, 32);
+            this.lblAdres.Size = new System.Drawing.Size(69, 28);
             this.lblAdres.TabIndex = 31;
             this.lblAdres.Text = "Adres:";
             // 
@@ -377,81 +380,33 @@
             // 
             this.lblTCKimlikNo.AutoSize = true;
             this.lblTCKimlikNo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTCKimlikNo.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.lblTCKimlikNo.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblTCKimlikNo.ForeColor = System.Drawing.Color.Black;
-            this.lblTCKimlikNo.Location = new System.Drawing.Point(135, 289);
+            this.lblTCKimlikNo.Location = new System.Drawing.Point(151, 384);
             this.lblTCKimlikNo.Name = "lblTCKimlikNo";
-            this.lblTCKimlikNo.Size = new System.Drawing.Size(119, 64);
+            this.lblTCKimlikNo.Size = new System.Drawing.Size(43, 28);
             this.lblTCKimlikNo.TabIndex = 30;
-            this.lblTCKimlikNo.Text = "TC Kimlik\r\nNumarası";
+            this.lblTCKimlikNo.Text = "T.C:";
             // 
             // rtbAdres
             // 
-            this.rtbAdres.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.rtbAdres.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.rtbAdres.ForeColor = System.Drawing.Color.Black;
-            this.rtbAdres.Location = new System.Drawing.Point(271, 345);
+            this.rtbAdres.Location = new System.Drawing.Point(522, 115);
             this.rtbAdres.Name = "rtbAdres";
-            this.rtbAdres.Size = new System.Drawing.Size(257, 77);
+            this.rtbAdres.Size = new System.Drawing.Size(416, 185);
             this.rtbAdres.TabIndex = 32;
             this.rtbAdres.Text = "";
             // 
             // mtbTelefon
             // 
-            this.mtbTelefon.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.mtbTelefon.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.mtbTelefon.ForeColor = System.Drawing.Color.Black;
-            this.mtbTelefon.Location = new System.Drawing.Point(271, 246);
-            this.mtbTelefon.Mask = "00000";
+            this.mtbTelefon.Location = new System.Drawing.Point(156, 340);
+            this.mtbTelefon.Mask = "(999) 000-0000";
             this.mtbTelefon.Name = "mtbTelefon";
-            this.mtbTelefon.Size = new System.Drawing.Size(257, 39);
+            this.mtbTelefon.Size = new System.Drawing.Size(311, 32);
             this.mtbTelefon.TabIndex = 33;
-            this.mtbTelefon.ValidatingType = typeof(int);
-            // 
-            // lblSifre
-            // 
-            this.lblSifre.AutoSize = true;
-            this.lblSifre.BackColor = System.Drawing.Color.Transparent;
-            this.lblSifre.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.lblSifre.ForeColor = System.Drawing.Color.Black;
-            this.lblSifre.Location = new System.Drawing.Point(556, 144);
-            this.lblSifre.Name = "lblSifre";
-            this.lblSifre.Size = new System.Drawing.Size(70, 32);
-            this.lblSifre.TabIndex = 37;
-            this.lblSifre.Text = "Şifre:";
-            // 
-            // lblKullaniciAdi
-            // 
-            this.lblKullaniciAdi.AutoSize = true;
-            this.lblKullaniciAdi.BackColor = System.Drawing.Color.Transparent;
-            this.lblKullaniciAdi.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.lblKullaniciAdi.ForeColor = System.Drawing.Color.Black;
-            this.lblKullaniciAdi.Location = new System.Drawing.Point(556, 90);
-            this.lblKullaniciAdi.Name = "lblKullaniciAdi";
-            this.lblKullaniciAdi.Size = new System.Drawing.Size(155, 32);
-            this.lblKullaniciAdi.TabIndex = 36;
-            this.lblKullaniciAdi.Text = "Kullanici Adi:";
-            // 
-            // txtKullaniciAdi
-            // 
-            this.txtKullaniciAdi.BackColor = System.Drawing.Color.White;
-            this.txtKullaniciAdi.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtKullaniciAdi.ForeColor = System.Drawing.Color.Black;
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(709, 89);
-            this.txtKullaniciAdi.Multiline = true;
-            this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(257, 35);
-            this.txtKullaniciAdi.TabIndex = 35;
-            // 
-            // txtSifre
-            // 
-            this.txtSifre.BackColor = System.Drawing.Color.White;
-            this.txtSifre.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.txtSifre.ForeColor = System.Drawing.Color.Black;
-            this.txtSifre.Location = new System.Drawing.Point(709, 143);
-            this.txtSifre.Multiline = true;
-            this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(257, 35);
-            this.txtSifre.TabIndex = 34;
-            this.txtSifre.UseSystemPasswordChar = true;
             // 
             // pnlMenu
             // 
@@ -545,15 +500,84 @@
             this.pnlUst.Size = new System.Drawing.Size(1000, 75);
             this.pnlUst.TabIndex = 38;
             // 
+            // lblFaks
+            // 
+            this.lblFaks.AutoSize = true;
+            this.lblFaks.BackColor = System.Drawing.Color.Transparent;
+            this.lblFaks.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.lblFaks.ForeColor = System.Drawing.Color.Black;
+            this.lblFaks.Location = new System.Drawing.Point(151, 384);
+            this.lblFaks.Name = "lblFaks";
+            this.lblFaks.Size = new System.Drawing.Size(56, 28);
+            this.lblFaks.TabIndex = 40;
+            this.lblFaks.Text = "Faks:";
+            this.lblFaks.Visible = false;
+            // 
+            // lblFirmaAd
+            // 
+            this.lblFirmaAd.AutoSize = true;
+            this.lblFirmaAd.BackColor = System.Drawing.Color.Transparent;
+            this.lblFirmaAd.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.lblFirmaAd.ForeColor = System.Drawing.Color.Black;
+            this.lblFirmaAd.Location = new System.Drawing.Point(151, 159);
+            this.lblFirmaAd.Name = "lblFirmaAd";
+            this.lblFirmaAd.Size = new System.Drawing.Size(98, 28);
+            this.lblFirmaAd.TabIndex = 42;
+            this.lblFirmaAd.Text = "Firma Ad:";
+            this.lblFirmaAd.Visible = false;
+            // 
+            // lblTedarikciAdSoyad
+            // 
+            this.lblTedarikciAdSoyad.AutoSize = true;
+            this.lblTedarikciAdSoyad.BackColor = System.Drawing.Color.Transparent;
+            this.lblTedarikciAdSoyad.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.lblTedarikciAdSoyad.ForeColor = System.Drawing.Color.Black;
+            this.lblTedarikciAdSoyad.Location = new System.Drawing.Point(151, 84);
+            this.lblTedarikciAdSoyad.Name = "lblTedarikciAdSoyad";
+            this.lblTedarikciAdSoyad.Size = new System.Drawing.Size(188, 28);
+            this.lblTedarikciAdSoyad.TabIndex = 41;
+            this.lblTedarikciAdSoyad.Text = "Tedarikçi Ad Soyad:";
+            this.lblTedarikciAdSoyad.Visible = false;
+            // 
+            // lblVergiNo
+            // 
+            this.lblVergiNo.AutoSize = true;
+            this.lblVergiNo.BackColor = System.Drawing.Color.Transparent;
+            this.lblVergiNo.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
+            this.lblVergiNo.ForeColor = System.Drawing.Color.Black;
+            this.lblVergiNo.Location = new System.Drawing.Point(517, 309);
+            this.lblVergiNo.Name = "lblVergiNo";
+            this.lblVergiNo.Size = new System.Drawing.Size(97, 28);
+            this.lblVergiNo.TabIndex = 45;
+            this.lblVergiNo.Text = "Vergi No:";
+            this.lblVergiNo.Visible = false;
+            // 
+            // txtVergiNo
+            // 
+            this.txtVergiNo.BackColor = System.Drawing.Color.White;
+            this.txtVergiNo.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
+            this.txtVergiNo.ForeColor = System.Drawing.Color.Black;
+            this.txtVergiNo.Location = new System.Drawing.Point(522, 340);
+            this.txtVergiNo.MaxLength = 11;
+            this.txtVergiNo.Multiline = true;
+            this.txtVergiNo.Name = "txtVergiNo";
+            this.txtVergiNo.Size = new System.Drawing.Size(311, 32);
+            this.txtVergiNo.TabIndex = 43;
+            this.txtVergiNo.WordWrap = false;
+            // 
             // frmKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 525);
+            this.Controls.Add(this.lblVergiNo);
+            this.Controls.Add(this.txtVergiNo);
+            this.Controls.Add(this.lblFirmaAd);
+            this.Controls.Add(this.lblTedarikciAdSoyad);
+            this.Controls.Add(this.lblFaks);
             this.Controls.Add(this.pnlMenu);
-            this.Controls.Add(this.txtKullaniciAdi);
-            this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.mtbTelefon);
             this.Controls.Add(this.rtbAdres);
             this.Controls.Add(this.lblTelefon);
@@ -571,10 +595,7 @@
             this.Controls.Add(this.pnlKategori);
             this.Controls.Add(this.lblTCKimlikNo);
             this.Controls.Add(this.lblAdres);
-            this.Controls.Add(this.lblKullaniciAdi);
-            this.Controls.Add(this.lblSifre);
             this.Controls.Add(this.pnlUst);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmKayit";
@@ -612,10 +633,6 @@
         private System.Windows.Forms.Label lblTCKimlikNo;
         private System.Windows.Forms.RichTextBox rtbAdres;
         private System.Windows.Forms.MaskedTextBox mtbTelefon;
-        private System.Windows.Forms.Label lblSifre;
-        private System.Windows.Forms.Label lblKullaniciAdi;
-        private System.Windows.Forms.TextBox txtKullaniciAdi;
-        private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Button btnAvatar;
@@ -623,5 +640,10 @@
         private System.Windows.Forms.Button btnProfil;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Panel pnlUst;
+        private System.Windows.Forms.Label lblFaks;
+        private System.Windows.Forms.Label lblFirmaAd;
+        private System.Windows.Forms.Label lblTedarikciAdSoyad;
+        private System.Windows.Forms.Label lblVergiNo;
+        private System.Windows.Forms.TextBox txtVergiNo;
     }
 }

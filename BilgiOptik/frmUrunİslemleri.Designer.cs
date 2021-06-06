@@ -58,7 +58,7 @@ namespace BilgiOptik
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 116);
+            this.label1.Location = new System.Drawing.Point(39, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;
@@ -67,7 +67,7 @@ namespace BilgiOptik
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 180);
+            this.label2.Location = new System.Drawing.Point(34, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 2;
@@ -76,16 +76,16 @@ namespace BilgiOptik
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 52);
+            this.label3.Location = new System.Drawing.Point(37, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Ürün Adi";
+            this.label3.Text = "Ürün Adı";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 84);
+            this.label4.Location = new System.Drawing.Point(28, 48);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 6;
@@ -94,7 +94,7 @@ namespace BilgiOptik
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(48, 148);
+            this.label5.Location = new System.Drawing.Point(48, 115);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 8;
@@ -103,7 +103,7 @@ namespace BilgiOptik
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(0, 315);
+            this.label6.Location = new System.Drawing.Point(23, 314);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 13);
             this.label6.TabIndex = 10;
@@ -112,7 +112,7 @@ namespace BilgiOptik
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 263);
+            this.label7.Location = new System.Drawing.Point(35, 248);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(50, 13);
             this.label7.TabIndex = 12;
@@ -121,7 +121,7 @@ namespace BilgiOptik
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(2, 289);
+            this.label8.Location = new System.Drawing.Point(28, 281);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 13);
             this.label8.TabIndex = 14;
@@ -131,37 +131,37 @@ namespace BilgiOptik
             // 
             this.cmbKategori.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbKategori.FormattingEnabled = true;
-            this.cmbKategori.Location = new System.Drawing.Point(132, 113);
+            this.cmbKategori.Location = new System.Drawing.Point(92, 78);
             this.cmbKategori.Name = "cmbKategori";
             this.cmbKategori.Size = new System.Drawing.Size(107, 21);
-            this.cmbKategori.TabIndex = 16;
+            this.cmbKategori.TabIndex = 3;
             // 
             // cmbTedarikci
             // 
             this.cmbTedarikci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTedarikci.FormattingEnabled = true;
-            this.cmbTedarikci.Location = new System.Drawing.Point(133, 177);
+            this.cmbTedarikci.Location = new System.Drawing.Point(92, 146);
             this.cmbTedarikci.Name = "cmbTedarikci";
             this.cmbTedarikci.Size = new System.Drawing.Size(106, 21);
-            this.cmbTedarikci.TabIndex = 17;
+            this.cmbTedarikci.TabIndex = 5;
             // 
             // txtUrunAdi
             // 
-            this.txtUrunAdi.Location = new System.Drawing.Point(133, 52);
+            this.txtUrunAdi.Location = new System.Drawing.Point(92, 12);
             this.txtUrunAdi.Name = "txtUrunAdi";
             this.txtUrunAdi.Size = new System.Drawing.Size(106, 20);
-            this.txtUrunAdi.TabIndex = 18;
+            this.txtUrunAdi.TabIndex = 1;
             // 
             // txtAciklama
             // 
-            this.txtAciklama.Location = new System.Drawing.Point(133, 81);
+            this.txtAciklama.Location = new System.Drawing.Point(92, 45);
             this.txtAciklama.Name = "txtAciklama";
             this.txtAciklama.Size = new System.Drawing.Size(106, 20);
-            this.txtAciklama.TabIndex = 19;
+            this.txtAciklama.TabIndex = 2;
             // 
             // numStokMiktari
             // 
-            this.numStokMiktari.Location = new System.Drawing.Point(130, 308);
+            this.numStokMiktari.Location = new System.Drawing.Point(92, 312);
             this.numStokMiktari.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -169,13 +169,13 @@ namespace BilgiOptik
             0});
             this.numStokMiktari.Name = "numStokMiktari";
             this.numStokMiktari.Size = new System.Drawing.Size(107, 20);
-            this.numStokMiktari.TabIndex = 23;
+            this.numStokMiktari.TabIndex = 10;
             // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(133, 407);
+            this.btnEkle.Location = new System.Drawing.Point(11, 338);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(75, 23);
+            this.btnEkle.Size = new System.Drawing.Size(188, 36);
             this.btnEkle.TabIndex = 24;
             this.btnEkle.Text = "Ürün Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
@@ -185,29 +185,29 @@ namespace BilgiOptik
             // 
             this.cmbMarka.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMarka.FormattingEnabled = true;
-            this.cmbMarka.Location = new System.Drawing.Point(133, 145);
+            this.cmbMarka.Location = new System.Drawing.Point(92, 112);
             this.cmbMarka.Name = "cmbMarka";
             this.cmbMarka.Size = new System.Drawing.Size(107, 21);
-            this.cmbMarka.TabIndex = 25;
+            this.cmbMarka.TabIndex = 4;
             // 
             // txtUrunEkartmani
             // 
-            this.txtUrunEkartmani.Location = new System.Drawing.Point(131, 230);
+            this.txtUrunEkartmani.Location = new System.Drawing.Point(92, 213);
             this.txtUrunEkartmani.Name = "txtUrunEkartmani";
             this.txtUrunEkartmani.Size = new System.Drawing.Size(106, 20);
-            this.txtUrunEkartmani.TabIndex = 27;
+            this.txtUrunEkartmani.TabIndex = 7;
             // 
             // txtModelNumarasi
             // 
-            this.txtModelNumarasi.Location = new System.Drawing.Point(131, 204);
+            this.txtModelNumarasi.Location = new System.Drawing.Point(92, 180);
             this.txtModelNumarasi.Name = "txtModelNumarasi";
             this.txtModelNumarasi.Size = new System.Drawing.Size(106, 20);
-            this.txtModelNumarasi.TabIndex = 26;
+            this.txtModelNumarasi.TabIndex = 6;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(2, 233);
+            this.label9.Location = new System.Drawing.Point(8, 216);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(77, 13);
             this.label9.TabIndex = 29;
@@ -216,7 +216,7 @@ namespace BilgiOptik
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(2, 211);
+            this.label10.Location = new System.Drawing.Point(2, 183);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(83, 13);
             this.label10.TabIndex = 28;
@@ -224,7 +224,7 @@ namespace BilgiOptik
             // 
             // numSatisFiyat
             // 
-            this.numSatisFiyat.Location = new System.Drawing.Point(130, 282);
+            this.numSatisFiyat.Location = new System.Drawing.Point(92, 279);
             this.numSatisFiyat.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -232,11 +232,11 @@ namespace BilgiOptik
             0});
             this.numSatisFiyat.Name = "numSatisFiyat";
             this.numSatisFiyat.Size = new System.Drawing.Size(107, 20);
-            this.numSatisFiyat.TabIndex = 30;
+            this.numSatisFiyat.TabIndex = 9;
             // 
             // numAlisFiyat
             // 
-            this.numAlisFiyat.Location = new System.Drawing.Point(132, 256);
+            this.numAlisFiyat.Location = new System.Drawing.Point(92, 246);
             this.numAlisFiyat.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -244,13 +244,14 @@ namespace BilgiOptik
             0});
             this.numAlisFiyat.Name = "numAlisFiyat";
             this.numAlisFiyat.Size = new System.Drawing.Size(107, 20);
-            this.numAlisFiyat.TabIndex = 31;
+            this.numAlisFiyat.TabIndex = 8;
             // 
             // frmUrunİslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 442);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(212, 381);
             this.Controls.Add(this.numAlisFiyat);
             this.Controls.Add(this.numSatisFiyat);
             this.Controls.Add(this.label9);
@@ -272,8 +273,11 @@ namespace BilgiOptik
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmUrunİslemleri";
-            this.Text = "frmUrunİslemleri";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Ürün İşlemleri";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUrunİslemleri_FormClosed);
             this.Load += new System.EventHandler(this.frmUrunİslemleri_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numStokMiktari)).EndInit();

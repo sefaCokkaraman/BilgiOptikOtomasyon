@@ -43,7 +43,11 @@
             this.btnEklentiler = new System.Windows.Forms.Button();
             this.btnProfil = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.btnAjanda = new System.Windows.Forms.Button();
             this.btnNotDefteri = new System.Windows.Forms.Button();
+            this.txtBaslik = new System.Windows.Forms.TextBox();
+            this.rtbMesaj = new System.Windows.Forms.RichTextBox();
+            this.lstGecmisNotlar = new System.Windows.Forms.ListBox();
             this.pnlKategori.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
@@ -219,6 +223,7 @@
             // 
             this.btnAvatar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(42)))), ((int)(((byte)(42)))));
             this.btnAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAvatar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnAvatar.FlatAppearance.BorderSize = 0;
             this.btnAvatar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAvatar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
@@ -248,6 +253,7 @@
             this.btnEklentiler.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEklentiler.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEklentiler.UseVisualStyleBackColor = true;
+            this.btnEklentiler.Click += new System.EventHandler(this.btnEklentiler_Click);
             // 
             // btnProfil
             // 
@@ -287,28 +293,77 @@
             this.btnCikis.UseVisualStyleBackColor = true;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
+            // btnAjanda
+            // 
+            this.btnAjanda.FlatAppearance.BorderSize = 0;
+            this.btnAjanda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjanda.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnAjanda.Image = ((System.Drawing.Image)(resources.GetObject("btnAjanda.Image")));
+            this.btnAjanda.Location = new System.Drawing.Point(928, 367);
+            this.btnAjanda.Name = "btnAjanda";
+            this.btnAjanda.Size = new System.Drawing.Size(60, 70);
+            this.btnAjanda.TabIndex = 11;
+            this.btnAjanda.UseVisualStyleBackColor = true;
+            this.btnAjanda.Click += new System.EventHandler(this.btnAjanda_Click);
+            // 
             // btnNotDefteri
             // 
             this.btnNotDefteri.FlatAppearance.BorderSize = 0;
             this.btnNotDefteri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNotDefteri.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnNotDefteri.Image = ((System.Drawing.Image)(resources.GetObject("btnNotDefteri.Image")));
-            this.btnNotDefteri.Location = new System.Drawing.Point(928, 443);
+            this.btnNotDefteri.Location = new System.Drawing.Point(923, 443);
             this.btnNotDefteri.Name = "btnNotDefteri";
-            this.btnNotDefteri.Size = new System.Drawing.Size(60, 70);
+            this.btnNotDefteri.Size = new System.Drawing.Size(65, 70);
             this.btnNotDefteri.TabIndex = 10;
             this.btnNotDefteri.UseVisualStyleBackColor = true;
             this.btnNotDefteri.Click += new System.EventHandler(this.btnNotDefteri_Click);
+            // 
+            // txtBaslik
+            // 
+            this.txtBaslik.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtBaslik.Location = new System.Drawing.Point(146, 86);
+            this.txtBaslik.Name = "txtBaslik";
+            this.txtBaslik.Size = new System.Drawing.Size(842, 29);
+            this.txtBaslik.TabIndex = 18;
+            this.txtBaslik.Visible = false;
+            // 
+            // rtbMesaj
+            // 
+            this.rtbMesaj.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.rtbMesaj.Location = new System.Drawing.Point(146, 131);
+            this.rtbMesaj.Name = "rtbMesaj";
+            this.rtbMesaj.Size = new System.Drawing.Size(592, 173);
+            this.rtbMesaj.TabIndex = 19;
+            this.rtbMesaj.Text = "";
+            this.rtbMesaj.Visible = false;
+            // 
+            // lstGecmisNotlar
+            // 
+            this.lstGecmisNotlar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.lstGecmisNotlar.FormattingEnabled = true;
+            this.lstGecmisNotlar.ItemHeight = 21;
+            this.lstGecmisNotlar.Location = new System.Drawing.Point(748, 131);
+            this.lstGecmisNotlar.Name = "lstGecmisNotlar";
+            this.lstGecmisNotlar.Size = new System.Drawing.Size(240, 172);
+            this.lstGecmisNotlar.TabIndex = 20;
+            this.lstGecmisNotlar.Visible = false;
+            this.lstGecmisNotlar.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstGecmisNotlar_MouseDoubleClick);
             // 
             // frmAnasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 525);
-            this.Controls.Add(this.btnNotDefteri);
+            this.Controls.Add(this.txtBaslik);
+            this.Controls.Add(this.rtbMesaj);
+            this.Controls.Add(this.lstGecmisNotlar);
             this.Controls.Add(this.pnlMenu);
+            this.Controls.Add(this.btnAjanda);
+            this.Controls.Add(this.btnNotDefteri);
             this.Controls.Add(this.pnlKategori);
             this.Controls.Add(this.pnlUst);
             this.ForeColor = System.Drawing.Color.Black;
@@ -318,9 +373,11 @@
             this.Name = "frmAnasayfa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Anasayfa";
+            this.Load += new System.EventHandler(this.frmAnasayfa_Load);
             this.pnlKategori.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -340,5 +397,9 @@
         private System.Windows.Forms.Button btnEklentiler;
         private System.Windows.Forms.Button btnProfil;
         private System.Windows.Forms.Button btnNotDefteri;
+        private System.Windows.Forms.Button btnAjanda;
+        private System.Windows.Forms.TextBox txtBaslik;
+        private System.Windows.Forms.RichTextBox rtbMesaj;
+        private System.Windows.Forms.ListBox lstGecmisNotlar;
     }
 }

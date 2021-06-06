@@ -50,24 +50,24 @@ namespace BilgiOptik
 
         private void lblKayit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Yakında Gelicek");
+            formlarArasıGecis.girisKayit.Show();
         }
 
         private void btnSifreKapali_Click(object sender, EventArgs e)
         {
-            if (txtSifre.PasswordChar == '\0')
+            if (txtSifre.PasswordChar == '\0') //boş karakter
             {
-                btnSifreAcık.BringToFront();
-                txtSifre.PasswordChar = ('*');
+                btnSifreAcık.BringToFront(); //öne getir
+                txtSifre.PasswordChar = ('*'); // yıldız ekle
             }
         }
 
         private void btnSifreAcık_Click(object sender, EventArgs e)
         {
-            if (txtSifre.PasswordChar == '*')
+            if (txtSifre.PasswordChar == '*') //yıldız ekle
             {
-                btnSifreKapali.BringToFront();
-                txtSifre.PasswordChar = ('\0');
+                btnSifreKapali.BringToFront(); //öne getir
+                txtSifre.PasswordChar = ('\0'); //boş karakter
             }
         }
 

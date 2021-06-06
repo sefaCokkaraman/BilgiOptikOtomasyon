@@ -21,5 +21,7 @@ namespace BilgiOptik
         public static frmSifremiUnuttum sifremiUnuttum = new frmSifremiUnuttum();
         public static frmBaslangicEkrani baslangicEkrani = new frmBaslangicEkrani();
         public static frmProfil profilbilgi = new frmProfil();
+        public static frmGirisKayit girisKayit = new frmGirisKayit();
+        public static frmNotDefteri notDefteri = new frmNotDefteri();
     }
 }

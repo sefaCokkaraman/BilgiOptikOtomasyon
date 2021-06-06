@@ -94,6 +94,12 @@
     <Compile Include="frmGelirGider.Designer.cs">
       <DependentUpon>frmGelirGider.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGirisKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGirisKayit.Designer.cs">
+      <DependentUpon>frmGirisKayit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGozNumara.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,12 +184,6 @@
     <Compile Include="frmUrunİslemleri.Designer.cs">
       <DependentUpon>frmUrunİslemleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmYeniKayit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmYeniKayit.Designer.cs">
-      <DependentUpon>frmYeniKayit.cs</DependentUpon>
-    </Compile>
     <Compile Include="Kayit.cs" />
     <Compile Include="kayitBelirleme.cs" />
     <Compile Include="Model\Ajanda.cs" />
@@ -224,6 +224,9 @@
     <EmbeddedResource Include="frmAnasayfa.resx">
       <DependentUpon>frmAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAyarlar.resx">
+      <DependentUpon>frmAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBaslangicEkrani.resx">
       <DependentUpon>frmBaslangicEkrani.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGelirGider.resx">
       <DependentUpon>frmGelirGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGirisKayit.resx">
+      <DependentUpon>frmGirisKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGozNumara.resx">
       <DependentUpon>frmGozNumara.cs</DependentUpon>
@@ -274,9 +280,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUrunİslemleri.resx">
       <DependentUpon>frmUrunİslemleri.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmYeniKayit.resx">
-      <DependentUpon>frmYeniKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

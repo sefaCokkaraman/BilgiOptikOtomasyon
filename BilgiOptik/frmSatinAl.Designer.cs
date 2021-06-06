@@ -46,7 +46,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblFiyat = new System.Windows.Forms.Label();
             this.lblTutar = new System.Windows.Forms.Label();
-            this.txtArama = new System.Windows.Forms.TextBox();
             this.lstUrunler = new System.Windows.Forms.ListBox();
             this.btnMusteri = new System.Windows.Forms.Button();
             this.btnUrun = new System.Windows.Forms.Button();
@@ -68,8 +67,6 @@
             this.btnProfil = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblUrunFiyat = new System.Windows.Forms.Label();
-            this.lblMusteriId = new System.Windows.Forms.Label();
             this.pnlKategori.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -226,7 +223,7 @@
             // 
             this.txtMusteriTC.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMusteriTC.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtMusteriTC.Location = new System.Drawing.Point(178, 172);
+            this.txtMusteriTC.Location = new System.Drawing.Point(150, 108);
             this.txtMusteriTC.Name = "txtMusteriTC";
             this.txtMusteriTC.Size = new System.Drawing.Size(219, 22);
             this.txtMusteriTC.TabIndex = 1;
@@ -235,7 +232,7 @@
             // 
             this.txtUrun.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUrun.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtUrun.Location = new System.Drawing.Point(178, 247);
+            this.txtUrun.Location = new System.Drawing.Point(150, 183);
             this.txtUrun.Name = "txtUrun";
             this.txtUrun.Size = new System.Drawing.Size(219, 22);
             this.txtUrun.TabIndex = 3;
@@ -245,7 +242,7 @@
             this.btnUcret.BackColor = System.Drawing.Color.ForestGreen;
             this.btnUcret.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnUcret.ForeColor = System.Drawing.Color.White;
-            this.btnUcret.Location = new System.Drawing.Point(802, 442);
+            this.btnUcret.Location = new System.Drawing.Point(779, 442);
             this.btnUcret.Name = "btnUcret";
             this.btnUcret.Size = new System.Drawing.Size(188, 71);
             this.btnUcret.TabIndex = 5;
@@ -257,7 +254,7 @@
             // 
             this.lblMusteri.AutoSize = true;
             this.lblMusteri.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.lblMusteri.Location = new System.Drawing.Point(174, 148);
+            this.lblMusteri.Location = new System.Drawing.Point(146, 84);
             this.lblMusteri.Name = "lblMusteri";
             this.lblMusteri.Size = new System.Drawing.Size(66, 21);
             this.lblMusteri.TabIndex = 16;
@@ -267,7 +264,7 @@
             // 
             this.lblUrun.AutoSize = true;
             this.lblUrun.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.lblUrun.Location = new System.Drawing.Point(174, 223);
+            this.lblUrun.Location = new System.Drawing.Point(146, 159);
             this.lblUrun.Name = "lblUrun";
             this.lblUrun.Size = new System.Drawing.Size(45, 21);
             this.lblUrun.TabIndex = 17;
@@ -276,7 +273,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(178, 271);
+            this.panel2.Location = new System.Drawing.Point(150, 207);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(219, 1);
             this.panel2.TabIndex = 18;
@@ -284,7 +281,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(178, 197);
+            this.panel3.Location = new System.Drawing.Point(150, 133);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(219, 1);
             this.panel3.TabIndex = 19;
@@ -293,7 +290,7 @@
             // 
             this.lblFiyat.AutoSize = true;
             this.lblFiyat.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.lblFiyat.Location = new System.Drawing.Point(796, 391);
+            this.lblFiyat.Location = new System.Drawing.Point(773, 391);
             this.lblFiyat.Name = "lblFiyat";
             this.lblFiyat.Size = new System.Drawing.Size(79, 32);
             this.lblFiyat.TabIndex = 20;
@@ -303,32 +300,25 @@
             // 
             this.lblTutar.AutoSize = true;
             this.lblTutar.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.lblTutar.Location = new System.Drawing.Point(881, 391);
+            this.lblTutar.Location = new System.Drawing.Point(846, 391);
             this.lblTutar.Name = "lblTutar";
             this.lblTutar.Size = new System.Drawing.Size(41, 32);
             this.lblTutar.TabIndex = 21;
             this.lblTutar.Text = "00";
             // 
-            // txtArama
-            // 
-            this.txtArama.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtArama.Location = new System.Drawing.Point(773, 148);
-            this.txtArama.Name = "txtArama";
-            this.txtArama.Size = new System.Drawing.Size(215, 29);
-            this.txtArama.TabIndex = 23;
-            // 
             // lstUrunler
             // 
             this.lstUrunler.FormattingEnabled = true;
-            this.lstUrunler.Location = new System.Drawing.Point(178, 287);
+            this.lstUrunler.Location = new System.Drawing.Point(150, 225);
             this.lstUrunler.Name = "lstUrunler";
-            this.lstUrunler.Size = new System.Drawing.Size(219, 225);
+            this.lstUrunler.Size = new System.Drawing.Size(319, 290);
             this.lstUrunler.TabIndex = 24;
+            this.lstUrunler.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstUrunler_MouseDoubleClick);
             // 
             // btnMusteri
             // 
             this.btnMusteri.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnMusteri.Location = new System.Drawing.Point(403, 160);
+            this.btnMusteri.Location = new System.Drawing.Point(375, 96);
             this.btnMusteri.Name = "btnMusteri";
             this.btnMusteri.Size = new System.Drawing.Size(94, 38);
             this.btnMusteri.TabIndex = 2;
@@ -339,7 +329,7 @@
             // btnUrun
             // 
             this.btnUrun.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnUrun.Location = new System.Drawing.Point(403, 231);
+            this.btnUrun.Location = new System.Drawing.Point(375, 167);
             this.btnUrun.Name = "btnUrun";
             this.btnUrun.Size = new System.Drawing.Size(94, 38);
             this.btnUrun.TabIndex = 4;
@@ -589,41 +579,17 @@
             this.panel1.Size = new System.Drawing.Size(1000, 75);
             this.panel1.TabIndex = 25;
             // 
-            // lblUrunFiyat
-            // 
-            this.lblUrunFiyat.AutoSize = true;
-            this.lblUrunFiyat.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.lblUrunFiyat.ForeColor = System.Drawing.Color.Black;
-            this.lblUrunFiyat.Location = new System.Drawing.Point(503, 241);
-            this.lblUrunFiyat.Name = "lblUrunFiyat";
-            this.lblUrunFiyat.Size = new System.Drawing.Size(34, 28);
-            this.lblUrunFiyat.TabIndex = 27;
-            this.lblUrunFiyat.Text = "00";
-            // 
-            // lblMusteriId
-            // 
-            this.lblMusteriId.AutoSize = true;
-            this.lblMusteriId.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.lblMusteriId.ForeColor = System.Drawing.Color.Black;
-            this.lblMusteriId.Location = new System.Drawing.Point(503, 184);
-            this.lblMusteriId.Name = "lblMusteriId";
-            this.lblMusteriId.Size = new System.Drawing.Size(30, 28);
-            this.lblMusteriId.TabIndex = 29;
-            this.lblMusteriId.Text = "Id";
-            // 
             // frmSatinAl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 525);
-            this.Controls.Add(this.lblMusteriId);
-            this.Controls.Add(this.lblUrunFiyat);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.btnUrun);
             this.Controls.Add(this.btnMusteri);
             this.Controls.Add(this.lstUrunler);
-            this.Controls.Add(this.txtArama);
             this.Controls.Add(this.lblTutar);
             this.Controls.Add(this.lblFiyat);
             this.Controls.Add(this.panel3);
@@ -667,7 +633,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblFiyat;
         private System.Windows.Forms.Label lblTutar;
-        private System.Windows.Forms.TextBox txtArama;
         private System.Windows.Forms.ListBox lstUrunler;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnMusteri;
@@ -690,7 +655,5 @@
         private System.Windows.Forms.Button btnProfil;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblUrunFiyat;
-        private System.Windows.Forms.Label lblMusteriId;
     }
 }

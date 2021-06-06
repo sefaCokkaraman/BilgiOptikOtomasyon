@@ -23,60 +23,11 @@ namespace BilgiOptik
         object selectSorgusu;
 
 
-
-
-
         #region Form Butonları
 
-
-
-
-        private void btnAnasayfa_Click(object sender, EventArgs e)
-        {
-            FormAcma.Anasayfa.Show();
-            this.Hide();
-        }
-
-        private void btnKayit_Click(object sender, EventArgs e)
-        {
-            FormAcma.kayit.Show();
-
-            this.Hide();
-        }
-
-        private void btnUrunler_Click(object sender, EventArgs e)
-        {
-            FormAcma.urunler.Show();
-            this.Hide();
-        }
-
-        private void btnBilgiler_Click(object sender, EventArgs e)
-        {
-            FormAcma.bilgiler.Show();
-            this.Hide();
-        }
-
-        private void btnOdemeler_Click(object sender, EventArgs e)
-        {
-            FormAcma.odemeler.Show();
-
-            this.Hide();
-        }
-
-        private void btnSatinAl_Click(object sender, EventArgs e)
-        {
-            FormAcma.satinAl.Show();
-            this.Hide();
-        }
-
-        private void btnAyarlar_Click(object sender, EventArgs e)
-        {
-            FormAcma.ayarlar.Show();
-            this.Hide();
-        }
-
-
         #endregion
+
+
         private void frmGelirGider_Load(object sender, EventArgs e)
         {
 
@@ -153,8 +104,6 @@ namespace BilgiOptik
 
         private void dgvSatinAl_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-
         }
 
 
@@ -300,9 +249,6 @@ namespace BilgiOptik
                 }).Where(x => x.tarih >= seciliZaman).ToList();
 
             }//son 1 yıl
-
-
-
         }
 
         private void SatisGoster()
@@ -315,18 +261,11 @@ namespace BilgiOptik
                 x.toplamTutar,
                 x.OdemeTur.adi,
                 x.tarih,
-
-
             }).ToList();
-
-
         }
-
-
         private void txtAra_TextChanged(object sender, EventArgs e)
         {
             SatisGridGoster();
-
         }
 
         private object SatisGosterKullaniciAdi(string key)
@@ -369,25 +308,19 @@ namespace BilgiOptik
             {
                 if (cmbListele.SelectedIndex == 1)
                 {
-
                     dgwgelir.DataSource = SatisGosterKullaniciAdi(txtAra.Text);
-
                 }
                 else if (cmbListele.SelectedIndex == 2)
                 {
-
                     dgwgelir.DataSource = SatisGosterMusteriAdi(txtAra.Text);
                 }
-
             }
-
         }
 
         decimal toplamPara;
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-
             if (rbTedarikciGider.Checked == true)
             {
                 dgwgelir.DataSource = db.TedarikciGider.Select(x => new
@@ -402,9 +335,6 @@ namespace BilgiOptik
                     EklenmeTarihi = x.eklenmeTarihi
                 }).ToList();
             }
-
-
-
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -475,29 +405,92 @@ namespace BilgiOptik
                 }
                 e.Graphics.DrawString("---------------------------------------------------------------------------------------------", baslik, sb, 200, dgwgelir.Rows.Count * 30);
                 e.Graphics.DrawString("Toplam Tutar : " + toplamPara.ToString("c"), baslik, sb, 500,(dgwgelir.Rows.Count * 30) + 230);
-
-
             }
-
-
-
-
-
-
-
-
-
-
-
         }
         private void btnYazdir_Click(object sender, EventArgs e)
         {
             ppdSatis.ShowDialog();
 
         }
-        private void ppdSatis_Load(object sender, EventArgs e)
-        {
 
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (pnlKategori.Width != btnMenu.Width)
+            {
+                pnlKategori.Width = btnMenu.Width;
+            }
+            else
+            {
+                pnlKategori.Width = btnAnasayfa.Width;
+            }
+        }
+
+        private void btnAnasayfa_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.Anasayfa.Show();
+            this.Hide();
+        }
+
+        private void btnKayit_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.kayit.Show();
+            this.Hide();
+        }
+
+        private void btnUrunler_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.urunler.Show();
+            this.Hide();
+        }
+
+        private void btnBilgiler_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.bilgiler.Show();
+            this.Hide();
+        }
+
+        private void btnOdemeler_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.odemeler.Show();
+            this.Hide();
+        }
+
+        private void btnSatinAl_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.satinAl.Show();
+            this.Hide();
+        }
+
+        private void btnProfil_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.profilbilgi.Show();
+            this.Hide();
+            pnlMenu.Height = 75;
+        }
+
+        private void btnEklentiler_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.ayarlar.Show();
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.giris.Show();
+            pnlMenu.Height = 75;
+            pnlKategori.Width = 130;
+            this.Hide();
+        }
+
+        private void btnAvatar_Click(object sender, EventArgs e)
+        {
+            if (pnlMenu.Height == 75)
+            {
+                pnlMenu.Height = 243;
+            }
+            else
+            {
+                pnlMenu.Height = 75;
+            }
         }
     }
 }

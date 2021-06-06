@@ -22,6 +22,7 @@ namespace BilgiOptik
         public static Musteri goz;
         public static int id;
         public static int SatisGozArasiID;
+        public static bool ajanda = false, notDefteri = false;
 
         public static Satis GelenSatis { get; set; }
         /// <summary>

@@ -15,7 +15,6 @@ namespace BilgiOptik
 {
     public partial class frmKayit : Form
     {
-
         BilgiOptikContext db = new BilgiOptikContext();
         Kullanici k = new Kullanici();
         Musteri m = new Musteri();
@@ -28,11 +27,6 @@ namespace BilgiOptik
 
         private void frmKayit_Load(object sender, EventArgs e)
         {
-            lblKullaniciAdi.Visible = false;
-            lblSifre.Visible = false;
-            txtKullaniciAdi.Visible = false;
-            txtSifre.Visible = false;
-
             if (Program.k.yetkiID == 2)
             {
                 rbMusteri.Checked = true;
@@ -105,31 +99,22 @@ namespace BilgiOptik
             //PERSONEL
             else if (rbPersonel.Checked == true && rbMusteri.Checked == false && rbTedarikçi.Checked == false)
             {
-                k.kullaniciID = Program.k.kullaniciID;
-                k.yetkiID = 2;
-                k.adi = txtAd.Text;
-                k.soyadi = txtSoyad.Text;
-                k.eposta = txtEposta.Text;
-                k.telefon = mtbTelefon.Text;
-                k.TCKimlikNo = txtTCKimlik.Text;
-                k.adres = rtbAdres.Text;
-                k.kullaniciAdi = txtKullaniciAdi.Text;
-                k.sifre = txtSifre.Text;
-                db.Kullanici.Add(k);
-                db.SaveChanges();
-                MessageBox.Show("Kayıt Edildi");
+                frmGirisKayit frmGirisKayit = new frmGirisKayit();
+                frmGirisKayit.btnKayit_Click(sender, e);
             }
 
             //TEDARİKÇİ
             else if (rbTedarikçi.Checked == true && rbMusteri.Checked == false && rbPersonel.Checked == false)
             {
-                t.kullaniciID = Program.k.kullaniciID;
-                t.tedarikciAdi = txtAd.Text;
+                t.kullaniciID = Program.k.kullaniciID;                
+                t.tedarikciAdi = txtAd.Text;               
                 t.firmaAdi = txtSoyad.Text;
                 t.eposta = txtEposta.Text;
-                t.telefon = Convert.ToDecimal(mtbTelefon.Text);
+                t.telefon = Convert.ToDecimal(mtbTelefon.Text);              
                 t.faks = Convert.ToInt32(txtTCKimlik.Text);
+                t.tedarikciVergiNo = txtVergiNo.Text;
                 t.adres = rtbAdres.Text;
+                t.durum = true;
                 db.Tedarikci.Add(t);
                 db.SaveChanges();
                 MessageBox.Show("Kayıt Edildi");
@@ -145,11 +130,9 @@ namespace BilgiOptik
         {
             if (rbMusteri.Checked == true)
             {
+                lblAd.Visible = lblSoyad.Visible = lblTCKimlikNo.Visible = true;
+                lblTedarikciAdSoyad.Visible = lblFaks.Visible = lblFirmaAd.Visible = lblVergiNo.Visible = txtVergiNo.Visible = false;
                 btnMKayit.Enabled = true;
-                lblKullaniciAdi.Visible = false;
-                lblSifre.Visible = false;
-                txtKullaniciAdi.Visible = false;
-                txtSifre.Visible = false;
             }
         }
 
@@ -157,12 +140,9 @@ namespace BilgiOptik
         {
             if (rbPersonel.Checked == true)
             {
+                lblAd.Visible = lblSoyad.Visible = lblTCKimlikNo.Visible = true;
+                lblTedarikciAdSoyad.Visible = lblFaks.Visible = lblFirmaAd.Visible = lblVergiNo.Visible = txtVergiNo.Visible = false;
                 btnMKayit.Enabled = true;
-                lblKullaniciAdi.Visible = true;
-                lblSifre.Visible = true;
-                txtKullaniciAdi.Visible = true;
-                txtSifre.Visible = true;
-
             }
         }
 
@@ -170,27 +150,10 @@ namespace BilgiOptik
         {
             if (rbTedarikçi.Checked == true)
             {
+                lblAd.Visible = lblSoyad.Visible = lblTCKimlikNo.Visible = false;
+                lblTedarikciAdSoyad.Visible = lblFaks.Visible = lblFirmaAd.Visible = lblVergiNo.Visible = txtVergiNo.Visible = true;
                 btnMKayit.Enabled = true;
-                lblKullaniciAdi.Visible = false;
-                lblSifre.Visible = false;
-                txtKullaniciAdi.Visible = false;
-                txtSifre.Visible = false;
             }
-            //if (rbTedarikçi.Checked == true)
-            //{
-            //    kb.TedarikciEkleme(new Tedarikci()
-            //    {
-            //        kullaniciID = Program.k.kullaniciID,
-            //        firmaAdi = txtAd.Text,
-            //        tedarikciAdi = txtSoyad.Text,
-            //        tedarikciVergiNo = txtEposta.Text,
-            //        telefon = Convert.ToInt32(txtTelefon.Text),
-            //        faks = Convert.ToInt32(txtTCKimlik.Text),
-            //        eposta = txtKAdres.Text
-            //    });
-            //}
-            //MessageBox.Show("Kayıt Edildi");
-            //this.Close();
         }
 
         private void btnMenu_Click(object sender, EventArgs e)

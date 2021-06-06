@@ -64,7 +64,7 @@ namespace BilgiOptik
             // 
             this.btnStokEkle.BackColor = System.Drawing.Color.Transparent;
             this.btnStokEkle.FlatAppearance.BorderSize = 0;
-            this.btnStokEkle.Location = new System.Drawing.Point(219, 282);
+            this.btnStokEkle.Location = new System.Drawing.Point(210, 131);
             this.btnStokEkle.Name = "btnStokEkle";
             this.btnStokEkle.Size = new System.Drawing.Size(100, 26);
             this.btnStokEkle.TabIndex = 18;
@@ -76,7 +76,7 @@ namespace BilgiOptik
             // 
             this.btnVazgec.BackColor = System.Drawing.Color.Transparent;
             this.btnVazgec.FlatAppearance.BorderSize = 0;
-            this.btnVazgec.Location = new System.Drawing.Point(340, 282);
+            this.btnVazgec.Location = new System.Drawing.Point(337, 131);
             this.btnVazgec.Name = "btnVazgec";
             this.btnVazgec.Size = new System.Drawing.Size(100, 26);
             this.btnVazgec.TabIndex = 19;
@@ -168,7 +168,7 @@ namespace BilgiOptik
             this.lblOdemeTuru.Name = "lblOdemeTuru";
             this.lblOdemeTuru.Size = new System.Drawing.Size(103, 13);
             this.lblOdemeTuru.TabIndex = 28;
-            this.lblOdemeTuru.Text = "Odeme Turu Seçiniz";
+            this.lblOdemeTuru.Text = "Odeme Türü Seçiniz";
             // 
             // lnlUrunadi
             // 
@@ -191,7 +191,8 @@ namespace BilgiOptik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 320);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(452, 167);
             this.Controls.Add(this.txtUrunAd);
             this.Controls.Add(this.lnlUrunadi);
             this.Controls.Add(this.lblOdemeTuru);
@@ -206,8 +207,10 @@ namespace BilgiOptik
             this.Controls.Add(this.btnVazgec);
             this.Controls.Add(this.btnStokEkle);
             this.Controls.Add(this.numStokMiktari);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmStokEkle";
-            this.Text = "frmStokEkle";
+            this.Text = "Stok Ekle";
             this.Load += new System.EventHandler(this.frmStokEkle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numStokMiktari)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSatisFiyat)).EndInit();

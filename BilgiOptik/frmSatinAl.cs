@@ -37,17 +37,12 @@ namespace BilgiOptik
 
         BilgiOptikContext db = new BilgiOptikContext();
 
-
-
-
         private void frmSatinAl_Load(object sender, EventArgs e)
         {
-
             var liste = db.Urun.Where(x => x.durum == true).ToList();
             lstUrunler.DataSource = liste;
             lstUrunler.ValueMember = "modelNumarasi";
             lstUrunler.DisplayMember = "urunAdi";
-
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -124,18 +119,16 @@ namespace BilgiOptik
             if (rdbStandart.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(standart);
-                lblTutar.Text = toplam.ToString();
+                lblTutar.Text = toplam.ToString() + " TL";
             }
         }
-
-
 
         private void rdbBronz_CheckedChanged(object sender, EventArgs e)
         {
             if (rdbBronz.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(bronz);
-                lblTutar.Text = toplam.ToString();
+                lblTutar.Text = toplam.ToString() + " TL";
             }
         }
 
@@ -144,8 +137,14 @@ namespace BilgiOptik
             if (rdbGumus.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(gumus);
-                lblTutar.Text = toplam.ToString();
+                lblTutar.Text = toplam.ToString() + " TL";
             }
+        }
+
+        private void lstUrunler_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            secilenUrunId = (string)lstUrunler.SelectedValue;
+            UrunKontrol(secilenUrunId);
         }
 
         private void rdbAltin_CheckedChanged(object sender, EventArgs e)
@@ -153,7 +152,7 @@ namespace BilgiOptik
             if (rdbAltin.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(altin);
-                lblTutar.Text = toplam.ToString();
+                lblTutar.Text = toplam.ToString() + " TL";
             }
         }
 
@@ -162,7 +161,7 @@ namespace BilgiOptik
             if (rdbPlatin.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(platin);
-                lblTutar.Text = toplam.ToString();
+                lblTutar.Text = toplam.ToString() + " TL";
             }
         }
 
@@ -171,14 +170,9 @@ namespace BilgiOptik
             if (rdbElmas.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(elmas);
-                lblTutar.Text = toplam.ToString();
+                lblTutar.Text = toplam.ToString() + " TL";
             }
         }
-
-        //toplam = Convert.ToInt32(lblTutar.Text) + 300;
-        //toplam = Convert.ToDecimal(lblTutar.Text) + Convert.ToDecimal(elmas);
-        //lblTutar.Text = toplam.ToString();
-        //lblTutar.Text = elmas.ToString();
 
         private void btnMusteri_Click(object sender, EventArgs e)
         {
@@ -193,7 +187,6 @@ namespace BilgiOptik
             else
             {
                 MessageBox.Show("Merhaba " + m.adi + " " + m.soyadi);
-                //lblMusteriId.Text = m.musteriID.ToString();
                 id = m.musteriID;
 
             }
@@ -226,7 +219,7 @@ namespace BilgiOptik
             {
                 MessageBox.Show("Ürün Adı: " + u.urunAdi + "\n\nModel Numarası: " + u.modelNumarasi +
                 "\n \nÜrün Ekartmanı: " + u.urunEkartmani + "\n\nFiyatı: " + u.satisFiyat + " TL");
-                lblTutar.Text = u.satisFiyat.ToString();
+                lblTutar.Text = u.satisFiyat.ToString() + " TL";
                 urunfiyat = Convert.ToInt32(u.satisFiyat);
 
                 rdbStandart.Enabled = true;

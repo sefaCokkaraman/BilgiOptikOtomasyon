@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BilgiOptik.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace BilgiOptik
 {
     public partial class frmProfil : Form
     {
+        int id = 0;
+        BilgiOptikContext db = new BilgiOptikContext();
+        Kullanici k = new Kullanici();
         public frmProfil()
         {
             InitializeComponent();
@@ -19,16 +23,12 @@ namespace BilgiOptik
 
         private void frmProfil_Load(object sender, EventArgs e)
         {
-            lblAnasayfa.Text = Program.k.kullaniciAdi;
-
-            textBox1.Text = Program.k.adi;
-            textBox2.Text = Program.k.soyadi;
-            textBox3.Text = Program.k.TCKimlikNo;
-            textBox4.Text = Program.k.telefon.ToString();
-            textBox5.Text = Program.k.eposta;
-            textBox6.Text = Program.k.Yetki.adi;
-            textBox7.Text = Program.k.maas.ToString();
-            textBox8.Text = Program.k.adres;
+            txtKullaniciAdi.Text = Program.k.kullaniciAdi;
+            txtSifre.Text = Program.k.sifre;
+            mtbTelefon.Text = Program.k.telefon;
+            txtTCKimlikNo.Text = Program.k.TCKimlikNo.ToString();
+            txtEposta.Text = Program.k.eposta;
+            rtbAdres.Text = Program.k.adres;
         }
 
         private void btnAnasayfa_Click(object sender, EventArgs e)
@@ -88,6 +88,33 @@ namespace BilgiOptik
             else
             {
                 pnlMenu.Height = 75;
+            }
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            if (txtKullaniciAdi.Text != "" || txtSifre.Text != "" || mtbTelefon.Text != "(   )    -" || txtEposta.Text != "" || rtbAdres.Text != "")
+            {
+                if (cbOnay.Checked == true)
+                {
+                    id = Program.k.kullaniciID;
+                    var ara = db.Kullanici.Find(id);
+                    ara.kullaniciAdi = txtKullaniciAdi.Text;
+                    ara.sifre = txtSifre.Text;
+                    ara.telefon = mtbTelefon.Text;
+                    ara.eposta = txtEposta.Text;
+                    ara.adres = rtbAdres.Text;
+                    db.SaveChanges();
+                    MessageBox.Show("Bilgiler Güncellenmiştir","Güncelleme",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Onay verilmeden güncelleme işlemi gerçekleşemez");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bilgileri boş bırakamazsınız");
             }
         }
     }
