@@ -33,14 +33,7 @@ namespace BilgiOptik
                 btnStokEkle.Visible = false;
                 btnMarkaEkle.Visible = false;
                 btnSil.Visible = false;
-
-
                 cmsUrunlerGrid.Enabled = false;
-
-
-
-
-
             }
 
 

@@ -21,9 +21,9 @@ namespace BilgiOptik.Model
 
         public int kullaniciID { get; set; }
 
-        public int? urunID { get; set; }
+        public int? urunStandartID { get; set; }
 
-     
+        public int? urunID { get; set; }
 
         [Column(TypeName = "money")]
         public decimal? toplamTutar { get; set; }
@@ -32,7 +32,7 @@ namespace BilgiOptik.Model
 
         public DateTime? tarih { get; set; }
 
-        public virtual GozGecmis GozGecmis1 { get; set; }
+        public virtual GozGecmis GozGecmis { get; set; }
 
         public virtual Kullanici Kullanici { get; set; }
 
@@ -41,6 +41,8 @@ namespace BilgiOptik.Model
         public virtual OdemeTur OdemeTur { get; set; }
 
         public virtual Urun Urun { get; set; }
+
+        public virtual UrunStandart UrunStandart { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sikayet> Sikayet { get; set; }

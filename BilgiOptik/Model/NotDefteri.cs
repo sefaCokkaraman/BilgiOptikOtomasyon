@@ -9,7 +9,6 @@ namespace BilgiOptik.Model
     [Table("NotDefteri")]
     public partial class NotDefteri
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int notDefteriID { get; set; }
 
         public int kullaniciID { get; set; }

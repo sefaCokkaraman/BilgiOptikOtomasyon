@@ -137,6 +137,7 @@ namespace BilgiOptik
         {
             Ymusteri = null;
             txtMusteriTC.Clear();
+            dgvMusteriAldiklari.DataSource = null;
 
 
             foreach (Control item in this.grpBoxMusteriBilgi.Controls)
@@ -158,7 +159,14 @@ namespace BilgiOptik
                 }
 
             }
+            foreach (Control item in this.grpBoxGozNumaraları.Controls)
+            {
+                if (item is TextBox)
+                {
+                    item.Text = "0";
+                }
 
+            }
 
             btnMusteri.Enabled = true;
             btnCikisYap.Enabled = false;
@@ -188,11 +196,12 @@ namespace BilgiOptik
                               select new
                               {
                                   SatisID = sa.satisID,
-                                  GozGecmisi = sa.GozGecmis1.gozGecmisID,
+                                  GozGecmisi = sa.GozGecmis.gozGecmisID,
                                   SatanPersonel = sa.Kullanici.kullaniciAdi,
                                   UrunAdi = sa.Urun.urunAdi,
                                   Tutari = sa.toplamTutar,
                                   OdemeTipi = sa.OdemeTur.adi,
+                                  UrunStandarti=sa.UrunStandart.adi,
                                   Personel = sa.Kullanici.kullaniciAdi,
                                   Tarihi = sa.tarih
                                 
@@ -202,7 +211,7 @@ namespace BilgiOptik
             txtOdemeTuru.Text = entryPoint.OdemeTipi;
             txtPersonel.Text = entryPoint.Personel;
             txtToplamTutar.Text = Convert.ToDecimal(entryPoint.Tutari).ToString("c");
-  
+            txtStandart.Text = entryPoint.UrunStandarti;
             txtUrunAdi.Text = entryPoint.UrunAdi;
             //uzak.musteriID = Program.id;
             //uzak.solAxis = decimal.Parse(txtSolUzakAxis.Text);
@@ -276,7 +285,7 @@ namespace BilgiOptik
                               {
                                SatisID=sa.satisID,
 
-                                  GozGecmisi = sa.GozGecmis1.gozGecmisID,
+                                  GozGecmisi = sa.GozGecmis.gozGecmisID,
                                   SatanPersonel = sa.Kullanici.kullaniciAdi,
                                   UrunAdi = sa.Urun.urunAdi,
                                   Tutari = sa.toplamTutar,
@@ -336,6 +345,11 @@ namespace BilgiOptik
 
         }
 
+        private void grpboxSiparisDetay_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void MusteriGoster(Musteri m)
         {
             MessageBox.Show("Merhaba " + m.adi + " " + m.soyadi);
@@ -350,7 +364,7 @@ namespace BilgiOptik
                               select new
                               {
                                   SiparisID=sa.satisID,
-                                  GozGecmisi=sa.GozGecmis1.gozGecmisID,
+                                  GozGecmisi=sa.GozGecmis.gozGecmisID,
                                   SatanPersonel = sa.Kullanici.kullaniciAdi,
                                   UrunAdi = sa.Urun.urunAdi,
                                   Tutari = sa.toplamTutar,

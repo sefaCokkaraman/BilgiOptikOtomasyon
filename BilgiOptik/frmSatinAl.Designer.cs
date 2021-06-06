@@ -67,6 +67,7 @@
             this.btnProfil = new System.Windows.Forms.Button();
             this.btnCikis = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbOdemeTuru = new System.Windows.Forms.ComboBox();
             this.pnlKategori.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -579,6 +580,15 @@
             this.panel1.Size = new System.Drawing.Size(1000, 75);
             this.panel1.TabIndex = 25;
             // 
+            // cmbOdemeTuru
+            // 
+            this.cmbOdemeTuru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOdemeTuru.FormattingEnabled = true;
+            this.cmbOdemeTuru.Location = new System.Drawing.Point(489, 107);
+            this.cmbOdemeTuru.Name = "cmbOdemeTuru";
+            this.cmbOdemeTuru.Size = new System.Drawing.Size(121, 21);
+            this.cmbOdemeTuru.TabIndex = 27;
+            // 
             // frmSatinAl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -586,6 +596,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1000, 525);
+            this.Controls.Add(this.cmbOdemeTuru);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.btnUrun);
             this.Controls.Add(this.btnMusteri);
@@ -655,5 +666,6 @@
         private System.Windows.Forms.Button btnProfil;
         private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ComboBox cmbOdemeTuru;
     }
 }

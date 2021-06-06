@@ -36,6 +36,7 @@ namespace BilgiOptik.Model
         public virtual DbSet<Urun> Urun { get; set; }
         public virtual DbSet<UrunDetay> UrunDetay { get; set; }
         public virtual DbSet<UrunOzellik> UrunOzellik { get; set; }
+        public virtual DbSet<UrunStandart> UrunStandart { get; set; }
         public virtual DbSet<Yetki> Yetki { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -181,7 +182,7 @@ namespace BilgiOptik.Model
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<Satis>()
-                .HasOptional(e => e.GozGecmis1)
+                .HasOptional(e => e.GozGecmis)
                 .WithRequired(e => e.Satis);
 
             modelBuilder.Entity<Satis>()
@@ -220,6 +221,10 @@ namespace BilgiOptik.Model
 
             modelBuilder.Entity<UrunDetay>()
                 .Property(e => e.tutar)
+                .HasPrecision(19, 4);
+
+            modelBuilder.Entity<UrunStandart>()
+                .Property(e => e.fiyati)
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<Yetki>()

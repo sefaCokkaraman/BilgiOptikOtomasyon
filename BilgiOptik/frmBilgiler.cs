@@ -108,7 +108,11 @@ namespace BilgiOptik
         private void frmBilgiler_Load(object sender, EventArgs e)
         {
             rbMusteriler.Checked = true;
-
+            if (Program.k.yetkiID==2)
+            {
+                rbPersoneller.Visible = false;
+                rbTedarikciler.Visible = false;
+            }
         }
 
         private void TedarikCiGoster()

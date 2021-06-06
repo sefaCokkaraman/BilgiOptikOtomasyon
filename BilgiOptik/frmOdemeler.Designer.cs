@@ -95,6 +95,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtMusteriAdi = new System.Windows.Forms.TextBox();
             this.dgvMusteriAldiklari = new System.Windows.Forms.DataGridView();
+            this.txtStandart = new System.Windows.Forms.TextBox();
+            this.lblStandart = new System.Windows.Forms.Label();
             this.pnlKategori.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlUst.SuspendLayout();
@@ -442,7 +444,7 @@
             // lblOdemeTuru
             // 
             this.lblOdemeTuru.AutoSize = true;
-            this.lblOdemeTuru.Location = new System.Drawing.Point(31, 134);
+            this.lblOdemeTuru.Location = new System.Drawing.Point(25, 112);
             this.lblOdemeTuru.Name = "lblOdemeTuru";
             this.lblOdemeTuru.Size = new System.Drawing.Size(72, 13);
             this.lblOdemeTuru.TabIndex = 26;
@@ -459,6 +461,8 @@
             // 
             // grpboxSiparisDetay
             // 
+            this.grpboxSiparisDetay.Controls.Add(this.txtStandart);
+            this.grpboxSiparisDetay.Controls.Add(this.lblStandart);
             this.grpboxSiparisDetay.Controls.Add(this.grpBoxGozNumaraları);
             this.grpboxSiparisDetay.Controls.Add(this.txtPersonel);
             this.grpboxSiparisDetay.Controls.Add(this.txtOdemeTuru);
@@ -474,6 +478,7 @@
             this.grpboxSiparisDetay.TabIndex = 31;
             this.grpboxSiparisDetay.TabStop = false;
             this.grpboxSiparisDetay.Text = "Sipariş Detay";
+            this.grpboxSiparisDetay.Enter += new System.EventHandler(this.grpboxSiparisDetay_Enter);
             // 
             // grpBoxGozNumaraları
             // 
@@ -506,9 +511,9 @@
             this.grpBoxGozNumaraları.Controls.Add(this.txtSolYakinSph);
             this.grpBoxGozNumaraları.Controls.Add(this.txtSolUzakCyl);
             this.grpBoxGozNumaraları.Controls.Add(this.txtSolUzakSph);
-            this.grpBoxGozNumaraları.Location = new System.Drawing.Point(6, 103);
+            this.grpBoxGozNumaraları.Location = new System.Drawing.Point(6, 156);
             this.grpBoxGozNumaraları.Name = "grpBoxGozNumaraları";
-            this.grpBoxGozNumaraları.Size = new System.Drawing.Size(372, 201);
+            this.grpBoxGozNumaraları.Size = new System.Drawing.Size(372, 148);
             this.grpBoxGozNumaraları.TabIndex = 34;
             this.grpBoxGozNumaraları.TabStop = false;
             this.grpBoxGozNumaraları.Text = "Göz Numaraları";
@@ -544,7 +549,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(123, 32);
+            this.label9.Location = new System.Drawing.Point(137, 32);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(31, 13);
             this.label9.TabIndex = 91;
@@ -553,7 +558,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(76, 32);
+            this.label8.Location = new System.Drawing.Point(93, 34);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(27, 13);
             this.label8.TabIndex = 90;
@@ -607,8 +612,9 @@
             // txtSolUzakAxis
             // 
             this.txtSolUzakAxis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSolUzakAxis.Enabled = false;
             this.txtSolUzakAxis.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSolUzakAxis.Location = new System.Drawing.Point(138, 48);
+            this.txtSolUzakAxis.Location = new System.Drawing.Point(140, 48);
             this.txtSolUzakAxis.Name = "txtSolUzakAxis";
             this.txtSolUzakAxis.Size = new System.Drawing.Size(37, 22);
             this.txtSolUzakAxis.TabIndex = 84;
@@ -626,8 +632,9 @@
             // txtSagDaimiCyl
             // 
             this.txtSagDaimiCyl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSagDaimiCyl.Enabled = false;
             this.txtSagDaimiCyl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSagDaimiCyl.Location = new System.Drawing.Point(267, 109);
+            this.txtSagDaimiCyl.Location = new System.Drawing.Point(263, 109);
             this.txtSagDaimiCyl.Name = "txtSagDaimiCyl";
             this.txtSagDaimiCyl.Size = new System.Drawing.Size(37, 22);
             this.txtSagDaimiCyl.TabIndex = 81;
@@ -636,8 +643,9 @@
             // txtSagDaimiSph
             // 
             this.txtSagDaimiSph.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSagDaimiSph.Enabled = false;
             this.txtSagDaimiSph.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSagDaimiSph.Location = new System.Drawing.Point(220, 109);
+            this.txtSagDaimiSph.Location = new System.Drawing.Point(212, 109);
             this.txtSagDaimiSph.Name = "txtSagDaimiSph";
             this.txtSagDaimiSph.Size = new System.Drawing.Size(37, 22);
             this.txtSagDaimiSph.TabIndex = 80;
@@ -646,6 +654,7 @@
             // txtSagDaimiAxis
             // 
             this.txtSagDaimiAxis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSagDaimiAxis.Enabled = false;
             this.txtSagDaimiAxis.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtSagDaimiAxis.Location = new System.Drawing.Point(325, 109);
             this.txtSagDaimiAxis.Name = "txtSagDaimiAxis";
@@ -656,6 +665,7 @@
             // txtSolDaimiAxis
             // 
             this.txtSolDaimiAxis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSolDaimiAxis.Enabled = false;
             this.txtSolDaimiAxis.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtSolDaimiAxis.Location = new System.Drawing.Point(140, 109);
             this.txtSolDaimiAxis.Name = "txtSolDaimiAxis";
@@ -666,6 +676,7 @@
             // txtSolDaimiCyl
             // 
             this.txtSolDaimiCyl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSolDaimiCyl.Enabled = false;
             this.txtSolDaimiCyl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtSolDaimiCyl.Location = new System.Drawing.Point(83, 109);
             this.txtSolDaimiCyl.Name = "txtSolDaimiCyl";
@@ -676,6 +687,7 @@
             // txtSolDaimiSph
             // 
             this.txtSolDaimiSph.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSolDaimiSph.Enabled = false;
             this.txtSolDaimiSph.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtSolDaimiSph.Location = new System.Drawing.Point(40, 109);
             this.txtSolDaimiSph.Name = "txtSolDaimiSph";
@@ -687,6 +699,7 @@
             // txtSagYakinAxis
             // 
             this.txtSagYakinAxis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSagYakinAxis.Enabled = false;
             this.txtSagYakinAxis.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtSagYakinAxis.Location = new System.Drawing.Point(326, 76);
             this.txtSagYakinAxis.Name = "txtSagYakinAxis";
@@ -697,8 +710,9 @@
             // txtSagYakinCyl
             // 
             this.txtSagYakinCyl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSagYakinCyl.Enabled = false;
             this.txtSagYakinCyl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSagYakinCyl.Location = new System.Drawing.Point(271, 81);
+            this.txtSagYakinCyl.Location = new System.Drawing.Point(263, 82);
             this.txtSagYakinCyl.Name = "txtSagYakinCyl";
             this.txtSagYakinCyl.Size = new System.Drawing.Size(37, 22);
             this.txtSagYakinCyl.TabIndex = 75;
@@ -707,8 +721,9 @@
             // txtSagYakinSph
             // 
             this.txtSagYakinSph.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSagYakinSph.Enabled = false;
             this.txtSagYakinSph.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSagYakinSph.Location = new System.Drawing.Point(218, 76);
+            this.txtSagYakinSph.Location = new System.Drawing.Point(212, 76);
             this.txtSagYakinSph.Name = "txtSagYakinSph";
             this.txtSagYakinSph.Size = new System.Drawing.Size(37, 22);
             this.txtSagYakinSph.TabIndex = 74;
@@ -717,6 +732,7 @@
             // txtSagUzakAxis
             // 
             this.txtSagUzakAxis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSagUzakAxis.Enabled = false;
             this.txtSagUzakAxis.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtSagUzakAxis.Location = new System.Drawing.Point(326, 48);
             this.txtSagUzakAxis.Name = "txtSagUzakAxis";
@@ -727,8 +743,9 @@
             // txtSagUzakCyl
             // 
             this.txtSagUzakCyl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSagUzakCyl.Enabled = false;
             this.txtSagUzakCyl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSagUzakCyl.Location = new System.Drawing.Point(271, 48);
+            this.txtSagUzakCyl.Location = new System.Drawing.Point(263, 48);
             this.txtSagUzakCyl.Name = "txtSagUzakCyl";
             this.txtSagUzakCyl.Size = new System.Drawing.Size(37, 22);
             this.txtSagUzakCyl.TabIndex = 69;
@@ -737,8 +754,9 @@
             // txtSagUzakSph
             // 
             this.txtSagUzakSph.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSagUzakSph.Enabled = false;
             this.txtSagUzakSph.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSagUzakSph.Location = new System.Drawing.Point(218, 48);
+            this.txtSagUzakSph.Location = new System.Drawing.Point(212, 48);
             this.txtSagUzakSph.Name = "txtSagUzakSph";
             this.txtSagUzakSph.Size = new System.Drawing.Size(37, 22);
             this.txtSagUzakSph.TabIndex = 68;
@@ -747,8 +765,9 @@
             // txtSolYakinAxis
             // 
             this.txtSolYakinAxis.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSolYakinAxis.Enabled = false;
             this.txtSolYakinAxis.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtSolYakinAxis.Location = new System.Drawing.Point(138, 76);
+            this.txtSolYakinAxis.Location = new System.Drawing.Point(140, 76);
             this.txtSolYakinAxis.Name = "txtSolYakinAxis";
             this.txtSolYakinAxis.Size = new System.Drawing.Size(37, 22);
             this.txtSolYakinAxis.TabIndex = 73;
@@ -757,6 +776,7 @@
             // txtSolYakinCyl
             // 
             this.txtSolYakinCyl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSolYakinCyl.Enabled = false;
             this.txtSolYakinCyl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtSolYakinCyl.Location = new System.Drawing.Point(83, 76);
             this.txtSolYakinCyl.Name = "txtSolYakinCyl";
@@ -767,6 +787,7 @@
             // txtSolYakinSph
             // 
             this.txtSolYakinSph.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSolYakinSph.Enabled = false;
             this.txtSolYakinSph.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtSolYakinSph.Location = new System.Drawing.Point(40, 76);
             this.txtSolYakinSph.Name = "txtSolYakinSph";
@@ -778,6 +799,7 @@
             // txtSolUzakCyl
             // 
             this.txtSolUzakCyl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSolUzakCyl.Enabled = false;
             this.txtSolUzakCyl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtSolUzakCyl.Location = new System.Drawing.Point(83, 48);
             this.txtSolUzakCyl.Name = "txtSolUzakCyl";
@@ -789,6 +811,7 @@
             // txtSolUzakSph
             // 
             this.txtSolUzakSph.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSolUzakSph.Enabled = false;
             this.txtSolUzakSph.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.txtSolUzakSph.Location = new System.Drawing.Point(40, 48);
             this.txtSolUzakSph.Name = "txtSolUzakSph";
@@ -813,7 +836,7 @@
             this.txtOdemeTuru.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtOdemeTuru.Enabled = false;
             this.txtOdemeTuru.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtOdemeTuru.Location = new System.Drawing.Point(109, 128);
+            this.txtOdemeTuru.Location = new System.Drawing.Point(107, 103);
             this.txtOdemeTuru.Name = "txtOdemeTuru";
             this.txtOdemeTuru.Size = new System.Drawing.Size(154, 22);
             this.txtOdemeTuru.TabIndex = 44;
@@ -891,7 +914,7 @@
             this.txtMusteriAdi.Name = "txtMusteriAdi";
             this.txtMusteriAdi.Size = new System.Drawing.Size(154, 22);
             this.txtMusteriAdi.TabIndex = 33;
-            this.txtMusteriAdi.Text = "Adi";
+            this.txtMusteriAdi.Text = "Adı Soyadı";
             // 
             // dgvMusteriAldiklari
             // 
@@ -908,6 +931,26 @@
             this.dgvMusteriAldiklari.TabIndex = 33;
             this.dgvMusteriAldiklari.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMusteriAldiklari_CellContentDoubleClick);
             this.dgvMusteriAldiklari.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvMusteriAldiklari_CellMouseDoubleClick);
+            // 
+            // txtStandart
+            // 
+            this.txtStandart.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStandart.Enabled = false;
+            this.txtStandart.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtStandart.Location = new System.Drawing.Point(102, 131);
+            this.txtStandart.Name = "txtStandart";
+            this.txtStandart.Size = new System.Drawing.Size(154, 22);
+            this.txtStandart.TabIndex = 47;
+            this.txtStandart.Text = "....";
+            // 
+            // lblStandart
+            // 
+            this.lblStandart.AutoSize = true;
+            this.lblStandart.Location = new System.Drawing.Point(43, 140);
+            this.lblStandart.Name = "lblStandart";
+            this.lblStandart.Size = new System.Drawing.Size(53, 13);
+            this.lblStandart.TabIndex = 46;
+            this.lblStandart.Text = "Standart :";
             // 
             // frmOdemeler
             // 
@@ -1015,5 +1058,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtStandart;
+        private System.Windows.Forms.Label lblStandart;
     }
 }

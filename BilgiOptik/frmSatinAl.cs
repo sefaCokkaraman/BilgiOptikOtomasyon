@@ -21,6 +21,7 @@ namespace BilgiOptik
             platin = 100,
             elmas = 120,
             toplam = 00;
+        int standartD = 1, bronzD = 2, gumusD = 3, altinD = 4, platinD = 5, elmasD = 6;
 
         string secilenUrunId;
 
@@ -43,6 +44,13 @@ namespace BilgiOptik
             lstUrunler.DataSource = liste;
             lstUrunler.ValueMember = "modelNumarasi";
             lstUrunler.DisplayMember = "urunAdi";
+            cmbOdemeTuru.DataSource = db.OdemeTur.ToList();
+            cmbOdemeTuru.DisplayMember = "adi";
+            cmbOdemeTuru.ValueMember = "OdemeTurID";
+
+
+
+
         }
 
         private void btnMenu_Click(object sender, EventArgs e)
@@ -119,7 +127,7 @@ namespace BilgiOptik
             if (rdbStandart.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(standart);
-                lblTutar.Text = toplam.ToString() + " TL";
+                lblTutar.Text = toplam.ToString();
             }
         }
 
@@ -128,7 +136,7 @@ namespace BilgiOptik
             if (rdbBronz.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(bronz);
-                lblTutar.Text = toplam.ToString() + " TL";
+                lblTutar.Text = toplam.ToString();
             }
         }
 
@@ -137,7 +145,7 @@ namespace BilgiOptik
             if (rdbGumus.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(gumus);
-                lblTutar.Text = toplam.ToString() + " TL";
+                lblTutar.Text = toplam.ToString();
             }
         }
 
@@ -152,7 +160,7 @@ namespace BilgiOptik
             if (rdbAltin.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(altin);
-                lblTutar.Text = toplam.ToString() + " TL";
+                lblTutar.Text = toplam.ToString();
             }
         }
 
@@ -161,7 +169,7 @@ namespace BilgiOptik
             if (rdbPlatin.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(platin);
-                lblTutar.Text = toplam.ToString() + " TL";
+                lblTutar.Text = toplam.ToString();
             }
         }
 
@@ -170,7 +178,7 @@ namespace BilgiOptik
             if (rdbElmas.Checked == true)
             {
                 toplam = urunfiyat + Convert.ToDecimal(elmas);
-                lblTutar.Text = toplam.ToString() + " TL";
+                lblTutar.Text = toplam.ToString();
             }
         }
 
@@ -219,7 +227,7 @@ namespace BilgiOptik
             {
                 MessageBox.Show("Ürün Adı: " + u.urunAdi + "\n\nModel Numarası: " + u.modelNumarasi +
                 "\n \nÜrün Ekartmanı: " + u.urunEkartmani + "\n\nFiyatı: " + u.satisFiyat + " TL");
-                lblTutar.Text = u.satisFiyat.ToString() + " TL";
+                lblTutar.Text = u.satisFiyat.ToString() ;
                 urunfiyat = Convert.ToInt32(u.satisFiyat);
 
                 rdbStandart.Enabled = true;
@@ -244,6 +252,28 @@ namespace BilgiOptik
                 s.tarih = DateTime.Now;
                 u.stokMiktari = u.stokMiktari - 1;
                 s.urunID = u.urunID;
+                s.odemeTurID = (int)cmbOdemeTuru.SelectedValue;
+
+
+                if (rdbStandart.Checked == true)//napıyım ?
+                    s.urunStandartID = 1;
+                
+
+                else if (rdbBronz.Checked == true)//napıyım ?
+                    s.urunStandartID = 2;
+                
+                else if (rdbGumus.Checked == true)//napıyım ?
+                    s.urunStandartID = 3;
+                
+                else if (rdbAltin.Checked == true)//napıyım ?
+                    s.urunStandartID = 4;
+                  else if (rdbPlatin.Checked == true)//napıyım ?
+                    s.urunStandartID = 5;
+                
+                else if (rdbElmas.Checked == true)//napıyım ?
+                    s.urunStandartID = 6;
+
+
                 FormAcma.gozNumara.Show();
                 Program.id = id;
                 this.Hide();

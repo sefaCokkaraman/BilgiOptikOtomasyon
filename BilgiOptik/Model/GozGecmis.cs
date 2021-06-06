@@ -8,6 +8,7 @@ namespace BilgiOptik.Model
 
     public partial class GozGecmis
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int gozGecmisID { get; set; }
 
         public int? gozDaimiID { get; set; }

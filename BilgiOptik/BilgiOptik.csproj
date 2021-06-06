@@ -211,6 +211,7 @@
     <Compile Include="Model\Urun.cs" />
     <Compile Include="Model\UrunDetay.cs" />
     <Compile Include="Model\UrunOzellik.cs" />
+    <Compile Include="Model\UrunStandart.cs" />
     <Compile Include="Model\Views\EnCokSatilanUrunler_view.cs" />
     <Compile Include="Model\Views\EncokSatisYapanPersoneller_view.cs" />
     <Compile Include="Model\Views\ViewContext.cs" />
