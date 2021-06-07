@@ -353,13 +353,13 @@ namespace BilgiOptik
 
             StringFormat sFormat = new StringFormat();
             sFormat.Alignment = StringAlignment.Near;
-            e.Graphics.DrawString(" Hesap Haraketleri", baslik, sb, 200, 100);
+            e.Graphics.DrawString("         Hesap Haraketleri", baslik, sb, 200, 100);
 
 
             if (rbSatislar.Checked == true)
             {
                 toplamPara = 0;
-                e.Graphics.DrawString("ID       Musteri                 Personel          Toplam Tutar         Tarihi", baslik, sb, 30, 150);
+                e.Graphics.DrawString("ID       Musteri                 Personel           Toplam Tutar         Tarihi", baslik, sb, 30, 150);
                 e.Graphics.DrawString("-------------------------------------------------------------------------------------------------", baslik, sb, 30, 170);
                 for (int i = 0; i < dgwgelir.Rows.Count; i++)
                 {
@@ -374,7 +374,7 @@ namespace BilgiOptik
                     e.Graphics.DrawString(date.ToShortDateString(), Govde, sb, 600, 190 + (i * 30));
                     toplamPara += para;
                 }
-                e.Graphics.DrawString("---------------------------------------------------------------------------------------------", baslik, sb, 30, dgwgelir.Rows.Count * 30);
+                //e.Graphics.DrawString("---------------------------------------------------------------------------------------------", baslik, sb, 30, dgwgelir.Rows.Count * 30);
                 e.Graphics.DrawString("Toplam Tutar : " + toplamPara.ToString("c"), baslik, sb, 500, (dgwgelir.Rows.Count*30)+200);
             }
   
@@ -403,7 +403,7 @@ namespace BilgiOptik
 
 
                 }
-                e.Graphics.DrawString("---------------------------------------------------------------------------------------------", baslik, sb, 200, dgwgelir.Rows.Count * 30);
+                //e.Graphics.DrawString("---------------------------------------------------------------------------------------------", baslik, sb, 200, dgwgelir.Rows.Count * 30);
                 e.Graphics.DrawString("Toplam Tutar : " + toplamPara.ToString("c"), baslik, sb, 500,(dgwgelir.Rows.Count * 30) + 230);
             }
         }

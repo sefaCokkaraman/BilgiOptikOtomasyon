@@ -64,6 +64,7 @@
             // 
             this.txtSolUzakSph.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSolUzakSph.Location = new System.Drawing.Point(135, 125);
+            this.txtSolUzakSph.MaxLength = 5;
             this.txtSolUzakSph.Name = "txtSolUzakSph";
             this.txtSolUzakSph.Size = new System.Drawing.Size(43, 26);
             this.txtSolUzakSph.TabIndex = 0;
@@ -74,6 +75,7 @@
             // 
             this.txtSolUzakCyl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSolUzakCyl.Location = new System.Drawing.Point(225, 125);
+            this.txtSolUzakCyl.MaxLength = 5;
             this.txtSolUzakCyl.Name = "txtSolUzakCyl";
             this.txtSolUzakCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSolUzakCyl.TabIndex = 1;
@@ -84,6 +86,7 @@
             // 
             this.txtSolUzakAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSolUzakAxis.Location = new System.Drawing.Point(307, 125);
+            this.txtSolUzakAxis.MaxLength = 5;
             this.txtSolUzakAxis.Name = "txtSolUzakAxis";
             this.txtSolUzakAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSolUzakAxis.TabIndex = 2;
@@ -165,6 +168,7 @@
             // 
             this.txtSolYakinAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSolYakinAxis.Location = new System.Drawing.Point(307, 170);
+            this.txtSolYakinAxis.MaxLength = 5;
             this.txtSolYakinAxis.Name = "txtSolYakinAxis";
             this.txtSolYakinAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSolYakinAxis.TabIndex = 8;
@@ -175,6 +179,7 @@
             // 
             this.txtSolYakinCyl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSolYakinCyl.Location = new System.Drawing.Point(225, 170);
+            this.txtSolYakinCyl.MaxLength = 5;
             this.txtSolYakinCyl.Name = "txtSolYakinCyl";
             this.txtSolYakinCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSolYakinCyl.TabIndex = 7;
@@ -185,6 +190,7 @@
             // 
             this.txtSolYakinSph.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSolYakinSph.Location = new System.Drawing.Point(135, 170);
+            this.txtSolYakinSph.MaxLength = 5;
             this.txtSolYakinSph.Name = "txtSolYakinSph";
             this.txtSolYakinSph.Size = new System.Drawing.Size(43, 26);
             this.txtSolYakinSph.TabIndex = 6;
@@ -205,6 +211,7 @@
             // 
             this.txtSolDaimiAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSolDaimiAxis.Location = new System.Drawing.Point(307, 215);
+            this.txtSolDaimiAxis.MaxLength = 5;
             this.txtSolDaimiAxis.Name = "txtSolDaimiAxis";
             this.txtSolDaimiAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSolDaimiAxis.TabIndex = 14;
@@ -215,6 +222,7 @@
             // 
             this.txtSolDaimiCyl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSolDaimiCyl.Location = new System.Drawing.Point(225, 215);
+            this.txtSolDaimiCyl.MaxLength = 5;
             this.txtSolDaimiCyl.Name = "txtSolDaimiCyl";
             this.txtSolDaimiCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSolDaimiCyl.TabIndex = 13;
@@ -225,6 +233,7 @@
             // 
             this.txtSolDaimiSph.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSolDaimiSph.Location = new System.Drawing.Point(135, 215);
+            this.txtSolDaimiSph.MaxLength = 5;
             this.txtSolDaimiSph.Name = "txtSolDaimiSph";
             this.txtSolDaimiSph.Size = new System.Drawing.Size(43, 26);
             this.txtSolDaimiSph.TabIndex = 12;
@@ -247,6 +256,7 @@
             // 
             this.txtSagUzakSph.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSagUzakSph.Location = new System.Drawing.Point(468, 125);
+            this.txtSagUzakSph.MaxLength = 5;
             this.txtSagUzakSph.Name = "txtSagUzakSph";
             this.txtSagUzakSph.Size = new System.Drawing.Size(43, 26);
             this.txtSagUzakSph.TabIndex = 3;
@@ -257,6 +267,7 @@
             // 
             this.txtSagUzakCyl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSagUzakCyl.Location = new System.Drawing.Point(558, 125);
+            this.txtSagUzakCyl.MaxLength = 5;
             this.txtSagUzakCyl.Name = "txtSagUzakCyl";
             this.txtSagUzakCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSagUzakCyl.TabIndex = 4;
@@ -267,6 +278,7 @@
             // 
             this.txtSagUzakAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSagUzakAxis.Location = new System.Drawing.Point(640, 125);
+            this.txtSagUzakAxis.MaxLength = 5;
             this.txtSagUzakAxis.Name = "txtSagUzakAxis";
             this.txtSagUzakAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSagUzakAxis.TabIndex = 5;
@@ -307,6 +319,7 @@
             // 
             this.txtSagYakinSph.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSagYakinSph.Location = new System.Drawing.Point(468, 170);
+            this.txtSagYakinSph.MaxLength = 5;
             this.txtSagYakinSph.Name = "txtSagYakinSph";
             this.txtSagYakinSph.Size = new System.Drawing.Size(43, 26);
             this.txtSagYakinSph.TabIndex = 9;
@@ -317,6 +330,7 @@
             // 
             this.txtSagYakinCyl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSagYakinCyl.Location = new System.Drawing.Point(558, 170);
+            this.txtSagYakinCyl.MaxLength = 5;
             this.txtSagYakinCyl.Name = "txtSagYakinCyl";
             this.txtSagYakinCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSagYakinCyl.TabIndex = 10;
@@ -327,6 +341,7 @@
             // 
             this.txtSagYakinAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSagYakinAxis.Location = new System.Drawing.Point(640, 170);
+            this.txtSagYakinAxis.MaxLength = 5;
             this.txtSagYakinAxis.Name = "txtSagYakinAxis";
             this.txtSagYakinAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSagYakinAxis.TabIndex = 11;
@@ -337,6 +352,7 @@
             // 
             this.txtSagDaimiSph.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSagDaimiSph.Location = new System.Drawing.Point(468, 215);
+            this.txtSagDaimiSph.MaxLength = 5;
             this.txtSagDaimiSph.Name = "txtSagDaimiSph";
             this.txtSagDaimiSph.Size = new System.Drawing.Size(43, 26);
             this.txtSagDaimiSph.TabIndex = 15;
@@ -347,6 +363,7 @@
             // 
             this.txtSagDaimiCyl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSagDaimiCyl.Location = new System.Drawing.Point(558, 215);
+            this.txtSagDaimiCyl.MaxLength = 5;
             this.txtSagDaimiCyl.Name = "txtSagDaimiCyl";
             this.txtSagDaimiCyl.Size = new System.Drawing.Size(43, 26);
             this.txtSagDaimiCyl.TabIndex = 16;
@@ -357,6 +374,7 @@
             // 
             this.txtSagDaimiAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtSagDaimiAxis.Location = new System.Drawing.Point(640, 215);
+            this.txtSagDaimiAxis.MaxLength = 5;
             this.txtSagDaimiAxis.Name = "txtSagDaimiAxis";
             this.txtSagDaimiAxis.Size = new System.Drawing.Size(43, 26);
             this.txtSagDaimiAxis.TabIndex = 17;

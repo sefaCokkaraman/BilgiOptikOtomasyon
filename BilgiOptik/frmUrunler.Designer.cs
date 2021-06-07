@@ -73,16 +73,16 @@
             this.pnlUst.Controls.Add(this.btnKategoriEkle);
             this.pnlUst.Controls.Add(this.btnGelir);
             this.pnlUst.Controls.Add(this.btnUrunEkle);
-            this.pnlUst.Location = new System.Drawing.Point(130, 0);
+            this.pnlUst.Location = new System.Drawing.Point(3, 0);
             this.pnlUst.Name = "pnlUst";
-            this.pnlUst.Size = new System.Drawing.Size(870, 75);
+            this.pnlUst.Size = new System.Drawing.Size(997, 75);
             this.pnlUst.TabIndex = 11;
             // 
             // btnStokEkle
             // 
             this.btnStokEkle.BackColor = System.Drawing.Color.Transparent;
             this.btnStokEkle.FlatAppearance.BorderSize = 0;
-            this.btnStokEkle.Location = new System.Drawing.Point(317, 26);
+            this.btnStokEkle.Location = new System.Drawing.Point(450, 24);
             this.btnStokEkle.Name = "btnStokEkle";
             this.btnStokEkle.Size = new System.Drawing.Size(100, 26);
             this.btnStokEkle.TabIndex = 18;
@@ -94,7 +94,7 @@
             // 
             this.btnMarkaEkle.BackColor = System.Drawing.Color.Transparent;
             this.btnMarkaEkle.FlatAppearance.BorderSize = 0;
-            this.btnMarkaEkle.Location = new System.Drawing.Point(625, 26);
+            this.btnMarkaEkle.Location = new System.Drawing.Point(758, 24);
             this.btnMarkaEkle.Name = "btnMarkaEkle";
             this.btnMarkaEkle.Size = new System.Drawing.Size(100, 26);
             this.btnMarkaEkle.TabIndex = 16;
@@ -106,7 +106,7 @@
             // 
             this.btnKategoriEkle.BackColor = System.Drawing.Color.Transparent;
             this.btnKategoriEkle.FlatAppearance.BorderSize = 0;
-            this.btnKategoriEkle.Location = new System.Drawing.Point(471, 26);
+            this.btnKategoriEkle.Location = new System.Drawing.Point(604, 24);
             this.btnKategoriEkle.Name = "btnKategoriEkle";
             this.btnKategoriEkle.Size = new System.Drawing.Size(100, 26);
             this.btnKategoriEkle.TabIndex = 17;
@@ -118,7 +118,7 @@
             // 
             this.btnGelir.BackColor = System.Drawing.Color.Transparent;
             this.btnGelir.FlatAppearance.BorderSize = 0;
-            this.btnGelir.Location = new System.Drawing.Point(163, 26);
+            this.btnGelir.Location = new System.Drawing.Point(296, 24);
             this.btnGelir.Name = "btnGelir";
             this.btnGelir.Size = new System.Drawing.Size(100, 26);
             this.btnGelir.TabIndex = 14;
@@ -130,7 +130,7 @@
             // 
             this.btnUrunEkle.BackColor = System.Drawing.Color.Transparent;
             this.btnUrunEkle.FlatAppearance.BorderSize = 0;
-            this.btnUrunEkle.Location = new System.Drawing.Point(9, 26);
+            this.btnUrunEkle.Location = new System.Drawing.Point(142, 24);
             this.btnUrunEkle.Name = "btnUrunEkle";
             this.btnUrunEkle.Size = new System.Drawing.Size(100, 26);
             this.btnUrunEkle.TabIndex = 13;
@@ -159,6 +159,7 @@
             this.dgwUrunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgwUrunler.Size = new System.Drawing.Size(770, 285);
             this.dgwUrunler.TabIndex = 14;
+            this.dgwUrunler.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwUrunler_CellClick);
             this.dgwUrunler.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgwUrunler_CellMouseDoubleClick);
             this.dgwUrunler.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgwUrunler_CellMouseDown);
             // 

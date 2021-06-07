@@ -124,11 +124,11 @@ namespace BilgiOptik
         private void PersonelGoster()
         {
 
-            //var sorgu = db.Kullanici.Where(x => x.durum == true).Select(x => new { x.kullaniciAdi, x.kullaniciID }).ToList();
+            var sorgu = db.Kullanici.Where(x => x.durum == true).Select(x => new { x.kullaniciAdi, x.kullaniciID }).ToList();
 
-            //lstbxListele.DataSource = sorgu;
-            //lstbxListele.DisplayMember = "kullaniciAdi";
-            //lstbxListele.ValueMember = "kullaniciID";
+            lstbxListele.DataSource = sorgu;
+            lstbxListele.DisplayMember = "kullaniciAdi";
+            lstbxListele.ValueMember = "kullaniciID";
 
         }
         private void MusteriGoster()

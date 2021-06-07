@@ -81,10 +81,19 @@ namespace BilgiOptik
         {
             foreach (var c in this.Controls)
             {
-                if (c is TextBox || c is RichTextBox || c is MaskedTextBox)
+                if (c is TextBox)
                 {
+
                     ((TextBox)c).Text = "";
+                   
+                    
+                }
+                else if (c is RichTextBox)
+                {
                     ((RichTextBox)c).Text = "";
+                }
+                else if (c is MaskedTextBox)
+                {
                     ((MaskedTextBox)c).Text = "(   ) -";
                 }
             }

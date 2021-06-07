@@ -63,7 +63,7 @@ namespace BilgiOptik
             cmbOdemeTuru.DataSource = db.OdemeTur.ToList();
             cmbOdemeTuru.DisplayMember = "Adi";
             cmbOdemeTuru.ValueMember = "OdemeTurID";
-            lblToplamStok.Text = ur.stokMiktari.ToString();
+            lblStokMiktar.Text = ur.stokMiktari.ToString();
 
         }
     }

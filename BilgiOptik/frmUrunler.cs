@@ -209,7 +209,7 @@ namespace BilgiOptik
                 {
                     this.dgwUrunler.ClearSelection();
                     this.dgwUrunler.Rows[rowSelected].Selected = true;
-                    Program.stokUrun = db.Urun.Find(dgwUrunler.CurrentRow.Cells[0].Value);
+                  
                 }
 
             }
@@ -329,6 +329,11 @@ namespace BilgiOptik
             pnlKategori.Width = 130;
             this.Hide();
 
+        }
+
+        private void dgwUrunler_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Program.stokUrun = db.Urun.Find(dgwUrunler.CurrentRow.Cells[0].Value);
         }
     }
 

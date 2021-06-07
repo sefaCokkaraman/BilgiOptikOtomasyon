@@ -159,7 +159,7 @@ namespace BilgiOptik
                 }
 
             }
-            foreach (Control item in this.grpBoxGozNumaraları.Controls)
+            foreach (Control item in this.grpBoxGozNumaraları.Controls)// grouBoxGozNumaraları içersini temizler temizleme işlem
             {
                 if (item is TextBox)
                 {

@@ -149,10 +149,6 @@ namespace BilgiOptik.Model
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Musteri>()
-                .Property(e => e.telefon)
-                .HasPrecision(10, 0);
-
-            modelBuilder.Entity<Musteri>()
                 .HasMany(e => e.gozDaimi)
                 .WithRequired(e => e.Musteri)
                 .WillCascadeOnDelete(false);
@@ -189,10 +185,6 @@ namespace BilgiOptik.Model
                 .HasMany(e => e.Sikayet)
                 .WithRequired(e => e.Satis)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<Tedarikci>()
-                .Property(e => e.telefon)
-                .HasPrecision(13, 0);
 
             modelBuilder.Entity<TedarikciGider>()
                 .Property(e => e.birimFiyat)

@@ -29,7 +29,8 @@ namespace BilgiOptik.Model
         [StringLength(50)]
         public string tedarikciVergiNo { get; set; }
 
-        public decimal? telefon { get; set; }
+        [StringLength(20)]
+        public string telefon { get; set; }
 
         public int? faks { get; set; }
 

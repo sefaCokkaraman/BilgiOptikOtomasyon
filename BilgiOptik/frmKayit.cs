@@ -27,6 +27,8 @@ namespace BilgiOptik
 
         private void frmKayit_Load(object sender, EventArgs e)
         {
+
+            txtVergiNo.Visible = false;
             if (Program.k.yetkiID == 2)
             {
                 rbMusteri.Checked = true;
@@ -88,7 +90,7 @@ namespace BilgiOptik
                 m.adi = txtAd.Text;
                 m.soyadi = txtSoyad.Text;
                 m.eposta = txtEposta.Text;
-                m.telefon = Convert.ToDecimal(mtbTelefon.Text);
+                m.telefon = mtbTelefon.Text;
                 m.TCKimlikNo = txtTCKimlik.Text;
                 m.adres = rtbAdres.Text;
                 db.Musteri.Add(m);
@@ -110,7 +112,7 @@ namespace BilgiOptik
                 t.tedarikciAdi = txtAd.Text;               
                 t.firmaAdi = txtSoyad.Text;
                 t.eposta = txtEposta.Text;
-                t.telefon = Convert.ToDecimal(mtbTelefon.Text);              
+                t.telefon = mtbTelefon.Text;              
                 t.faks = Convert.ToInt32(txtTCKimlik.Text);
                 t.tedarikciVergiNo = txtVergiNo.Text;
                 t.adres = rtbAdres.Text;

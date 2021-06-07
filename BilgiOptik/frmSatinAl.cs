@@ -253,24 +253,24 @@ namespace BilgiOptik
                 u.stokMiktari = u.stokMiktari - 1;
                 s.urunID = u.urunID;
                 s.odemeTurID = (int)cmbOdemeTuru.SelectedValue;
+                
 
-
-                if (rdbStandart.Checked == true)//napıyım ?
+                if (rdbStandart.Checked == true)
                     s.urunStandartID = 1;
                 
 
-                else if (rdbBronz.Checked == true)//napıyım ?
+                else if (rdbBronz.Checked == true)
                     s.urunStandartID = 2;
                 
-                else if (rdbGumus.Checked == true)//napıyım ?
+                else if (rdbGumus.Checked == true)
                     s.urunStandartID = 3;
                 
-                else if (rdbAltin.Checked == true)//napıyım ?
+                else if (rdbAltin.Checked == true)
                     s.urunStandartID = 4;
-                  else if (rdbPlatin.Checked == true)//napıyım ?
+                  else if (rdbPlatin.Checked == true)
                     s.urunStandartID = 5;
                 
-                else if (rdbElmas.Checked == true)//napıyım ?
+                else if (rdbElmas.Checked == true)
                     s.urunStandartID = 6;
 
 

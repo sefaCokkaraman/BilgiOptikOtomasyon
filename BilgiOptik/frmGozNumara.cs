@@ -19,14 +19,14 @@ namespace BilgiOptik
         }
 
         BilgiOptikContext db = new BilgiOptikContext();
-        gozUzak uzak = new gozUzak();
-        gozYakin yakin = new gozYakin();
-        gozDaimi daimi = new gozDaimi();
+     
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             //SOL GÖZ
-            {
+            {   gozUzak uzak = new gozUzak();
+        gozYakin yakin = new gozYakin();
+        gozDaimi daimi = new gozDaimi();
                 //GÖZ ID = sol,sağ
                 //GÖZ DERECE = uzak,yakın,daimi
 

@@ -35,7 +35,9 @@ namespace BilgiOptik.Model
         [StringLength(100)]
         public string eposta { get; set; }
 
-        public decimal telefon { get; set; }
+        [Required]
+        [StringLength(20)]
+        public string telefon { get; set; }
 
         [Required]
         [StringLength(11)]
