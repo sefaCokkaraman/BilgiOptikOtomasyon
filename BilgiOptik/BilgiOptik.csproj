@@ -148,6 +148,18 @@
     <Compile Include="frmOdemeler.Designer.cs">
       <DependentUpon>frmOdemeler.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOdemeTipleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdemeTipleri.Designer.cs">
+      <DependentUpon>frmOdemeTipleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdemeTuruİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdemeTuruİslemleri.Designer.cs">
+      <DependentUpon>frmOdemeTuruİslemleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,6 +275,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOdemeler.resx">
       <DependentUpon>frmOdemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdemeTipleri.resx">
+      <DependentUpon>frmOdemeTipleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdemeTuruİslemleri.resx">
+      <DependentUpon>frmOdemeTuruİslemleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProfil.resx">
       <DependentUpon>frmProfil.cs</DependentUpon>

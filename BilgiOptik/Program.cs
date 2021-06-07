@@ -23,7 +23,8 @@ namespace BilgiOptik
         public static int id;
         public static int SatisGozArasiID;
         public static bool ajanda = false, notDefteri = false;
-
+        public static bool odemeTuruEklicenMi;
+        public static OdemeTur odemeTur;
         public static Satis GelenSatis { get; set; }
         /// <summary>
         /// The main entry point for the application.

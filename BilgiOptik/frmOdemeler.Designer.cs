@@ -55,6 +55,8 @@
             this.lblOdemeTuru = new System.Windows.Forms.Label();
             this.lblSatanPersonel = new System.Windows.Forms.Label();
             this.grpboxSiparisDetay = new System.Windows.Forms.GroupBox();
+            this.txtStandart = new System.Windows.Forms.TextBox();
+            this.lblStandart = new System.Windows.Forms.Label();
             this.grpBoxGozNumaraları = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -95,8 +97,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtMusteriAdi = new System.Windows.Forms.TextBox();
             this.dgvMusteriAldiklari = new System.Windows.Forms.DataGridView();
-            this.txtStandart = new System.Windows.Forms.TextBox();
-            this.lblStandart = new System.Windows.Forms.Label();
             this.pnlKategori.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlUst.SuspendLayout();
@@ -363,7 +363,7 @@
             this.btnOdemeTipleri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOdemeTipleri.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOdemeTipleri.UseVisualStyleBackColor = true;
-            this.btnOdemeTipleri.Click += new System.EventHandler(this.button1_Click);
+            this.btnOdemeTipleri.Click += new System.EventHandler(this.btnOdemeTipleri_Click);
             // 
             // btnOde
             // 
@@ -479,6 +479,26 @@
             this.grpboxSiparisDetay.TabStop = false;
             this.grpboxSiparisDetay.Text = "Sipariş Detay";
             this.grpboxSiparisDetay.Enter += new System.EventHandler(this.grpboxSiparisDetay_Enter);
+            // 
+            // txtStandart
+            // 
+            this.txtStandart.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtStandart.Enabled = false;
+            this.txtStandart.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.txtStandart.Location = new System.Drawing.Point(102, 131);
+            this.txtStandart.Name = "txtStandart";
+            this.txtStandart.Size = new System.Drawing.Size(154, 22);
+            this.txtStandart.TabIndex = 47;
+            this.txtStandart.Text = "....";
+            // 
+            // lblStandart
+            // 
+            this.lblStandart.AutoSize = true;
+            this.lblStandart.Location = new System.Drawing.Point(43, 140);
+            this.lblStandart.Name = "lblStandart";
+            this.lblStandart.Size = new System.Drawing.Size(53, 13);
+            this.lblStandart.TabIndex = 46;
+            this.lblStandart.Text = "Standart :";
             // 
             // grpBoxGozNumaraları
             // 
@@ -931,26 +951,6 @@
             this.dgvMusteriAldiklari.TabIndex = 33;
             this.dgvMusteriAldiklari.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMusteriAldiklari_CellContentDoubleClick);
             this.dgvMusteriAldiklari.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvMusteriAldiklari_CellMouseDoubleClick);
-            // 
-            // txtStandart
-            // 
-            this.txtStandart.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtStandart.Enabled = false;
-            this.txtStandart.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtStandart.Location = new System.Drawing.Point(102, 131);
-            this.txtStandart.Name = "txtStandart";
-            this.txtStandart.Size = new System.Drawing.Size(154, 22);
-            this.txtStandart.TabIndex = 47;
-            this.txtStandart.Text = "....";
-            // 
-            // lblStandart
-            // 
-            this.lblStandart.AutoSize = true;
-            this.lblStandart.Location = new System.Drawing.Point(43, 140);
-            this.lblStandart.Name = "lblStandart";
-            this.lblStandart.Size = new System.Drawing.Size(53, 13);
-            this.lblStandart.TabIndex = 46;
-            this.lblStandart.Text = "Standart :";
             // 
             // frmOdemeler
             // 

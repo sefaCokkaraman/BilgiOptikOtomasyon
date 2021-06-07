@@ -27,6 +27,7 @@ namespace BilgiOptik
         public static frmMarkaIslemleri markaIslemleri = new frmMarkaIslemleri();
         public static frmStokEkle stokEkle = new frmStokEkle();
         public static frmGirisKayit girisKayit = new frmGirisKayit();
+        
         public static void FormGoster(Form form)
         {
             form.Show();

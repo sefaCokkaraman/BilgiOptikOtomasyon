@@ -23,5 +23,7 @@ namespace BilgiOptik
         public static frmProfil profilbilgi = new frmProfil();
         public static frmGirisKayit girisKayit = new frmGirisKayit();
         public static frmNotDefteri notDefteri = new frmNotDefteri();
+        public static frmOdemeTipleri odemeTipleri = new frmOdemeTipleri();
+        public static frmOdemeTuruİslemleri odemeTuruİslemleri = new frmOdemeTuruİslemleri();
     }
 }

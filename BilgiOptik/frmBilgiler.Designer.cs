@@ -46,13 +46,11 @@
             this.txtAdres = new System.Windows.Forms.TextBox();
             this.txtTelefon = new System.Windows.Forms.TextBox();
             this.txtAd = new System.Windows.Forms.TextBox();
-            this.txtSoyadi = new System.Windows.Forms.TextBox();
             this.txtDeger2 = new System.Windows.Forms.TextBox();
             this.txtEposta = new System.Windows.Forms.TextBox();
             this.lblAd = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.lbldeger3 = new System.Windows.Forms.Label();
             this.lblDeger2 = new System.Windows.Forms.Label();
             this.lblDeger1 = new System.Windows.Forms.Label();
@@ -277,7 +275,7 @@
             // 
             // txtAdres
             // 
-            this.txtAdres.Location = new System.Drawing.Point(28, 197);
+            this.txtAdres.Location = new System.Drawing.Point(28, 178);
             this.txtAdres.Multiline = true;
             this.txtAdres.Name = "txtAdres";
             this.txtAdres.Size = new System.Drawing.Size(398, 87);
@@ -285,7 +283,7 @@
             // 
             // txtTelefon
             // 
-            this.txtTelefon.Location = new System.Drawing.Point(96, 98);
+            this.txtTelefon.Location = new System.Drawing.Point(96, 68);
             this.txtTelefon.Name = "txtTelefon";
             this.txtTelefon.Size = new System.Drawing.Size(100, 20);
             this.txtTelefon.TabIndex = 24;
@@ -297,13 +295,6 @@
             this.txtAd.Size = new System.Drawing.Size(100, 20);
             this.txtAd.TabIndex = 25;
             // 
-            // txtSoyadi
-            // 
-            this.txtSoyadi.Location = new System.Drawing.Point(96, 67);
-            this.txtSoyadi.Name = "txtSoyadi";
-            this.txtSoyadi.Size = new System.Drawing.Size(100, 20);
-            this.txtSoyadi.TabIndex = 26;
-            // 
             // txtDeger2
             // 
             this.txtDeger2.Location = new System.Drawing.Point(326, 67);
@@ -313,7 +304,7 @@
             // 
             // txtEposta
             // 
-            this.txtEposta.Location = new System.Drawing.Point(96, 130);
+            this.txtEposta.Location = new System.Drawing.Point(96, 100);
             this.txtEposta.Name = "txtEposta";
             this.txtEposta.Size = new System.Drawing.Size(100, 20);
             this.txtEposta.TabIndex = 28;
@@ -330,7 +321,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 104);
+            this.label2.Location = new System.Drawing.Point(25, 74);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 33;
@@ -339,20 +330,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 133);
+            this.label3.Location = new System.Drawing.Point(28, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 34;
             this.label3.Text = "Eposta";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 35;
-            this.label4.Text = "soyadı";
             // 
             // lbldeger3
             // 
@@ -384,7 +366,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(34, 181);
+            this.label12.Location = new System.Drawing.Point(34, 162);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(34, 13);
             this.label12.TabIndex = 43;
@@ -399,12 +381,10 @@
             this.grboxBilgiler.Controls.Add(this.txtDeger1);
             this.grboxBilgiler.Controls.Add(this.txtAdres);
             this.grboxBilgiler.Controls.Add(this.txtAd);
-            this.grboxBilgiler.Controls.Add(this.txtSoyadi);
             this.grboxBilgiler.Controls.Add(this.lblDeger2);
             this.grboxBilgiler.Controls.Add(this.txtDeger2);
             this.grboxBilgiler.Controls.Add(this.lbldeger3);
             this.grboxBilgiler.Controls.Add(this.txtEposta);
-            this.grboxBilgiler.Controls.Add(this.label4);
             this.grboxBilgiler.Controls.Add(this.lblAd);
             this.grboxBilgiler.Controls.Add(this.label3);
             this.grboxBilgiler.Controls.Add(this.label2);
@@ -553,13 +533,11 @@
         private System.Windows.Forms.TextBox txtAdres;
         private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.TextBox txtAd;
-        private System.Windows.Forms.TextBox txtSoyadi;
         private System.Windows.Forms.TextBox txtDeger2;
         private System.Windows.Forms.TextBox txtEposta;
         private System.Windows.Forms.Label lblAd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbldeger3;
         private System.Windows.Forms.Label lblDeger2;
         private System.Windows.Forms.Label lblDeger1;

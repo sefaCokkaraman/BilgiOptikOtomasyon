@@ -235,8 +235,8 @@ namespace BilgiOptik
                 var sorgu = db.Musteri.Find(id);
 
                 txtAd.Text = sorgu.adi;
-                txtSoyadi.Text = sorgu.soyadi;
-                txtTelefon.Text = sorgu.telefon.ToString();
+              
+                txtTelefon.Text = sorgu.telefon;
                 txtEposta.Text = sorgu.eposta;
                 txtAdres.Text = sorgu.adres;
 
@@ -249,7 +249,7 @@ namespace BilgiOptik
                 var sorgu = db.Tedarikci.Find(id);
                 txtAd.Text = sorgu.tedarikciAdi;
                 //txtSoyadi.Text = sorgu.tedarikciSoyadi;
-                txtTelefon.Text = sorgu.telefon.ToString();
+                txtTelefon.Text = sorgu.telefon;
                 txtEposta.Text = sorgu.eposta;
                 txtAdres.Text = sorgu.adres;
 
@@ -269,8 +269,8 @@ namespace BilgiOptik
                 id = (int)lstbxListele.SelectedValue;
                 var sorgu = db.Kullanici.Find(id);
                 txtAd.Text = sorgu.adi;
-                txtSoyadi.Text = sorgu.soyadi;
-                txtTelefon.Text = sorgu.telefon.ToString();
+               
+                txtTelefon.Text = sorgu.telefon;
                 txtEposta.Text = sorgu.eposta;
                 txtAdres.Text = sorgu.adres;
                 txtDeger1.Text = sorgu.TCKimlikNo;

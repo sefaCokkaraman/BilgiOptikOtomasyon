@@ -1,7 +1,7 @@
 ﻿
 namespace BilgiOptik
 {
-    partial class frmMarkaIslemleri
+    partial class frmOdemeTuruİslemleri
     {
         /// <summary>
         /// Required designer variable.
@@ -30,60 +30,60 @@ namespace BilgiOptik
         private void InitializeComponent()
         {
             this.btnIptal = new System.Windows.Forms.Button();
-            this.txtMarkaAdi = new System.Windows.Forms.TextBox();
-            this.lblKadi = new System.Windows.Forms.Label();
             this.btnEkle = new System.Windows.Forms.Button();
+            this.txtOdemeTuruAdi = new System.Windows.Forms.TextBox();
+            this.lblOdemeTuru = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnIptal
             // 
-            this.btnIptal.Location = new System.Drawing.Point(138, 50);
+            this.btnIptal.Location = new System.Drawing.Point(141, 57);
             this.btnIptal.Name = "btnIptal";
             this.btnIptal.Size = new System.Drawing.Size(75, 23);
-            this.btnIptal.TabIndex = 7;
+            this.btnIptal.TabIndex = 11;
             this.btnIptal.Text = "Iptal Et";
             this.btnIptal.UseVisualStyleBackColor = true;
             this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
-            // txtMarkaAdi
-            // 
-            this.txtMarkaAdi.Location = new System.Drawing.Point(83, 12);
-            this.txtMarkaAdi.Name = "txtMarkaAdi";
-            this.txtMarkaAdi.Size = new System.Drawing.Size(100, 20);
-            this.txtMarkaAdi.TabIndex = 5;
-            // 
-            // lblKadi
-            // 
-            this.lblKadi.AutoSize = true;
-            this.lblKadi.Location = new System.Drawing.Point(13, 15);
-            this.lblKadi.Name = "lblKadi";
-            this.lblKadi.Size = new System.Drawing.Size(55, 13);
-            this.lblKadi.TabIndex = 4;
-            this.lblKadi.Text = "Marka Adı";
-            // 
             // btnEkle
             // 
-            this.btnEkle.Location = new System.Drawing.Point(19, 50);
+            this.btnEkle.Location = new System.Drawing.Point(22, 57);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(75, 23);
-            this.btnEkle.TabIndex = 6;
+            this.btnEkle.TabIndex = 10;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
-            // frmMarkaIslemleri
+            // txtOdemeTuruAdi
+            // 
+            this.txtOdemeTuruAdi.Location = new System.Drawing.Point(102, 19);
+            this.txtOdemeTuruAdi.Name = "txtOdemeTuruAdi";
+            this.txtOdemeTuruAdi.Size = new System.Drawing.Size(100, 20);
+            this.txtOdemeTuruAdi.TabIndex = 9;
+            // 
+            // lblOdemeTuru
+            // 
+            this.lblOdemeTuru.AutoSize = true;
+            this.lblOdemeTuru.Location = new System.Drawing.Point(12, 22);
+            this.lblOdemeTuru.Name = "lblOdemeTuru";
+            this.lblOdemeTuru.Size = new System.Drawing.Size(84, 13);
+            this.lblOdemeTuru.TabIndex = 8;
+            this.lblOdemeTuru.Text = "Ödeme Türü Adı";
+            // 
+            // frmOdemeTuruİslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(225, 89);
+            this.ClientSize = new System.Drawing.Size(229, 97);
             this.Controls.Add(this.btnIptal);
             this.Controls.Add(this.btnEkle);
-            this.Controls.Add(this.txtMarkaAdi);
-            this.Controls.Add(this.lblKadi);
-            this.Name = "frmMarkaIslemleri";
-            this.Text = "MarkaIslemleri";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMarkaIslemleri_FormClosing);
-            this.Load += new System.EventHandler(this.frmMarkaIslemleri_Load);
+            this.Controls.Add(this.txtOdemeTuruAdi);
+            this.Controls.Add(this.lblOdemeTuru);
+            this.Name = "frmOdemeTuruİslemleri";
+            this.Text = "frmOdemeTuruİslemleri";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmOdemeTuruİslemleri_FormClosing);
+            this.Load += new System.EventHandler(this.frmOdemeTuruİslemleri_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,8 +92,8 @@ namespace BilgiOptik
         #endregion
 
         private System.Windows.Forms.Button btnIptal;
-        private System.Windows.Forms.TextBox txtMarkaAdi;
-        private System.Windows.Forms.Label lblKadi;
         private System.Windows.Forms.Button btnEkle;
+        private System.Windows.Forms.TextBox txtOdemeTuruAdi;
+        private System.Windows.Forms.Label lblOdemeTuru;
     }
 }

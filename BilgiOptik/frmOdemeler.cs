@@ -305,10 +305,7 @@ namespace BilgiOptik
             txtTelefon.Text = Ymusteri.telefon.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void grpBoxGozNumaraları_Enter(object sender, EventArgs e)
         {
@@ -347,6 +344,13 @@ namespace BilgiOptik
 
         private void grpboxSiparisDetay_Enter(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnOdemeTipleri_Click(object sender, EventArgs e)
+        {
+            formlarArasıGecis.odemeTipleri.ShowDialog();
+        
 
         }
 
