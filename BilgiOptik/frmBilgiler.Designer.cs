@@ -219,7 +219,7 @@
             // lstbxListele
             // 
             this.lstbxListele.FormattingEnabled = true;
-            this.lstbxListele.Location = new System.Drawing.Point(136, 156);
+            this.lstbxListele.Location = new System.Drawing.Point(144, 156);
             this.lstbxListele.Name = "lstbxListele";
             this.lstbxListele.Size = new System.Drawing.Size(290, 264);
             this.lstbxListele.TabIndex = 16;
@@ -228,7 +228,7 @@
             // rbPersoneller
             // 
             this.rbPersoneller.AutoSize = true;
-            this.rbPersoneller.Location = new System.Drawing.Point(250, 426);
+            this.rbPersoneller.Location = new System.Drawing.Point(258, 426);
             this.rbPersoneller.Name = "rbPersoneller";
             this.rbPersoneller.Size = new System.Drawing.Size(77, 17);
             this.rbPersoneller.TabIndex = 17;
@@ -240,7 +240,7 @@
             // rbMusteriler
             // 
             this.rbMusteriler.AutoSize = true;
-            this.rbMusteriler.Location = new System.Drawing.Point(146, 426);
+            this.rbMusteriler.Location = new System.Drawing.Point(154, 426);
             this.rbMusteriler.Name = "rbMusteriler";
             this.rbMusteriler.Size = new System.Drawing.Size(70, 17);
             this.rbMusteriler.TabIndex = 17;
@@ -252,7 +252,7 @@
             // rbTedarikciler
             // 
             this.rbTedarikciler.AutoSize = true;
-            this.rbTedarikciler.Location = new System.Drawing.Point(341, 426);
+            this.rbTedarikciler.Location = new System.Drawing.Point(349, 426);
             this.rbTedarikciler.Name = "rbTedarikciler";
             this.rbTedarikciler.Size = new System.Drawing.Size(80, 17);
             this.rbTedarikciler.TabIndex = 18;
@@ -408,7 +408,7 @@
             this.grboxBilgiler.Controls.Add(this.lblAd);
             this.grboxBilgiler.Controls.Add(this.label3);
             this.grboxBilgiler.Controls.Add(this.label2);
-            this.grboxBilgiler.Location = new System.Drawing.Point(432, 150);
+            this.grboxBilgiler.Location = new System.Drawing.Point(440, 150);
             this.grboxBilgiler.Name = "grboxBilgiler";
             this.grboxBilgiler.Size = new System.Drawing.Size(547, 355);
             this.grboxBilgiler.TabIndex = 44;
