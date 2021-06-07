@@ -98,7 +98,7 @@ namespace BilgiOptik
             this.Controls.Add(this.lblKategoriler);
             this.Controls.Add(this.lstboxMarkalar);
             this.Name = "frmMarka";
-            this.Text = "frmMarka";
+            this.Text = "Marka";
             this.Load += new System.EventHandler(this.frmMarka_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -82,7 +82,8 @@ namespace BilgiOptik
             this.Controls.Add(this.txtKategoriAdi);
             this.Controls.Add(this.lblKadi);
             this.Name = "frmKategoriIslemleri";
-            this.Text = "frmKategoriIslemleri";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Kategori İşlemleri";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmKategoriIslemleri_FormClosing);
             this.Load += new System.EventHandler(this.frmKategoriIslemleri_Load);
             this.ResumeLayout(false);
